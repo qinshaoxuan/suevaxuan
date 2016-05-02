@@ -1,0 +1,505 @@
+/* ===============================================
+   HEADER
+   =============================================== */
+
+.header {
+	background: #f1f1f1;
+	color:#616161;
+	border:solid 1px #ddd;
+	width:94%; 
+	margin:15px 0; 
+	padding:2%; 
+	text-shadow: 0px 1px 1px #fff;
+}
+
+.banner {
+	background:#333;
+	width:94%;
+	padding:50px 2%;
+	text-align:center; 
+	margin-top:20px;
+	color:#fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.banner h1 {
+	font-size:21px;
+}
+
+.banner h2 {
+	color:#fff;
+	font-size:18px;
+}
+
+.big-button {
+	margin:50px auto 0 auto;
+}
+
+.big-button a {
+	
+	background: #ff6644;
+	border:solid 2px #ff6644;
+	color:#fff;
+	text-decoration:none;
+	padding: 14px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	margin:50px auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width:198px;
+
+}
+
+.big-button a:hover {
+	background: none;
+	border:solid 2px #fff;
+}
+
+.header {
+	background: #4588b5;
+	color:#fff;
+	width:94%;
+	margin:10px 0; 
+	padding:20px 2%; 
+	position:relative;
+}
+
+.header .theme_desc {
+	position:absolute;
+	top:50%;
+	right:50px;
+	margin-top:-35.5px;
+}
+
+h2.maintitle { 
+	text-align: right;
+	font-size: 20px;
+	font-family: 'Roboto', Geneva, sans-serif;
+	color: #fff;
+	font-weight:400;
+	text-shadow:none;
+}
+
+
+h2.maintitle span { 
+	font-size: 14px;
+}
+
+h2.maintitle.features { 
+	padding-left:0;
+	float:left;
+}
+
+.clear {
+	clear:both;
+	float:none !important;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.postformat ,
+.pageformat {
+	display:none;
+}
+
+.postformat {
+	margin:0 0 12px 0;
+	position:relative;
+}
+
+.updated.fade.message_save.wip_message { 
+	margin:0 0 15px 0;
+	width:98%; 
+	padding:10px 0;
+}
+
+/* ===============================================
+   TABS
+   =============================================== */
+
+#tabs { 
+	width:98%; 
+	height:100%;
+}
+
+.tabs { 
+	position:relative; 
+	display: block
+}
+
+#tabs-container { 
+	border-top:solid 1px #fff; 
+	margin:0; 
+	padding:0 5px;
+}
+
+#tabs-container p { 
+	font-family: Geneva, sans-serif;
+	font-size:15px; 
+	text-align:center; 
+	margin:0; 
+	line-height:1.4em;
+}
+
+#tabs-container h3 {
+	text-align:center;
+}
+
+#tabs ul { 
+	list-style:none; 
+	margin:0; 
+	background:#4588b5;
+	padding:15px; 
+}
+
+#tabs.metaboxes ul { 
+	margin-top:15px; 
+}
+
+#tabs ul.orders {
+	padding:0;
+	background:none;
+}
+
+#tabs.metaboxes { 
+	width:100%;
+}
+
+#tabs.metaboxes ul.orders{ 
+	height:100%; 
+	border:none;
+}
+
+#tabs.metaboxes ul.orders .wip_container h5.element{ 
+	cursor:move;
+}
+
+#tabs.metaboxes li { 
+	float:inherit;
+	margin-bottom:0;
+}
+
+#tabs li { 
+	float:left;
+	margin:0;
+}
+
+#tabs li a { 
+	color:#fff; 
+	text-decoration:none; 
+	padding:14px; 
+	display:block;
+	text-align:center; 
+	-webkit-transition: all .3s ease; 	
+	-moz-transition: all .3s ease; 
+	-o-transition: all .3s ease; 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	float:left; 
+	font-size:16px; 
+	text-shadow:none;
+	margin:0;
+}
+
+#tabs.metaboxes li a { 
+	padding:15px; 
+	font-size:14px;
+	margin:0;
+}
+
+#tabs.metaboxes li a.delete { 
+	margin:0 0 0 20%; 
+	float:none; 
+	display:inline; 
+	padding:5px; 
+	font-size:14px;
+	color:#555; 
+}
+
+#tabs.metaboxes li a.delete:hover { 
+	background:inherit;
+}
+
+
+#tabs li a:hover, 
+#tabs li.ui-tabs-active a, 
+#tabs li.ui-state-active a {
+	background:#5C97BF;
+	color:#fff;
+	text-shadow:none;
+}
+
+#tabs li a:focus { 
+	outline:none;
+}
+
+/* ===============================================
+   BOXS
+   =============================================== */
+
+.wip_mainbox { 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	font-size:14px; 
+	line-height:1.4em; 
+	background:#fff; 
+	position:relative;
+}
+
+.wip_openbox { 
+	display:block !important;
+}
+
+.wip_mainbox-open { 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	font-size:14px; 
+	line-height:1.4em; 
+	background:#f3f3f3; 
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd; 
+	position:relative; 
+}
+
+.wip_container  { 
+	background:url(../images/subparent.png) no-repeat 8% center ;
+}
+
+.wip_container h5.element { 
+	cursor:pointer; 
+	background:url(../images/subparent.png) no-repeat #5C97BF 98% center ; 
+	padding:15px; 
+	font-size:16px;
+	margin:15px 0 0 0; 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	font-weight:normal;
+	text-shadow:none; 
+	color:#fff; 
+	-webkit-transition: all .3s ease; 	
+	-moz-transition: all .3s ease; 
+	-o-transition: all .3s ease;
+}
+
+.wip_container h5.element-open { 
+	background:#4588b5; 
+	padding:15px; 
+	font-size:15px; 
+	margin:10px 0 0 0; 
+	font-weight:normal;
+	color: #fff;
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+}
+
+.wip_container h5.element:hover { 
+	color:#fff; 
+	background:url(../images/subparent.png) no-repeat #4588b5 98% center ;
+}
+
+.wip_container h5.inactive { 
+	background:url(../images/subparent-hover.png) no-repeat #4588b5 98% center; 
+	color:#fff;
+}
+
+.wip_container h5.inactive:hover { 
+	background:url(../images/subparent-hover.png) no-repeat #4588b5 98% center; 
+	color:#fff;
+}
+
+/* ===============================================
+   SIDEBARS
+   =============================================== */
+
+.wip_inputbox_sidebars {
+    padding:10px 15px;
+}
+
+.wip_inputbox_sidebars .sidebar_list {
+    padding:5px 0 5px 20%;
+	border-bottom:solid 1px #ddd;
+}
+
+.wip_inputbox_sidebars .sidebar_list:last-of-child {
+	border-bottom:none;
+}
+
+.wip_inputbox_sidebars .delete {
+	float:right;
+	line-height:48px;
+	margin-right:15px;
+}
+
+.wip_inputbox_sidebars .delete a {
+	text-decoration:none;
+}
+
+.wip_inputbox_sidebars .name {
+	margin:0 0 0 20px;
+	font-size:14px;
+	line-height:16px;
+	float:left
+}
+
+/* ===============================================
+   INPUTBOX
+   =============================================== */
+
+p.wip_inputbox {
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #fff;
+}
+
+div.wip_inputbox {
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #fff;
+	padding:15px 0 15px 15px;
+}
+
+.wip_inputbox textarea{
+	height:155px;
+	width:78%;
+	font-size:12px;
+	padding:4px 1.5% 4px 0.5%;
+	color:#333;
+	line-height:1.5em;
+	background:#efefef;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	border:solid 1px #ddd;
+	border:solid 1px #ddd;
+}
+
+.wip_inputbox input[type="text"], 
+.wip_inputbox input[type="color"], 
+.wip_inputbox select{
+	width:78%;
+	height:25px;
+	font-size:12px;
+	padding:4px 1.5% 4px 0.5%;
+	color:#333;
+	line-height:1.5em;
+	background:#efefef;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:solid 1px #ddd;
+}
+
+.wip_inputbox label{
+	color:#333; 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	float:left; 
+	width:20%;
+	font-size:14px;
+	padding:4px 0;
+}
+
+.wip_inputbox p {
+	color:#333; 
+	font-family:'Roboto',Helvetica, Geneva, sans-serif; 
+	font-style:italic; 
+	font-size:12px; 
+    margin:5px 0 0 20%;
+}
+
+.wip_inputbox span.separator{
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.wip_inputbox textarea:focus, .wip_inputbox input:focus, .wip_inputbox select:focus{
+	background:#fff;
+	border:solid 1px #ddd;
+}
+
+.wip_inputbox .button {
+    margin:5px 0 5px 0;
+}
+
+.wip_inputbox .iphone-check input[type="checkbox"]  {
+    width:280px;
+}
+
+.wip_inputbox .preview {
+	width:98%;
+	height:300px;
+	border:solid 4px #fff;
+	outline:solid 1px #ddd;
+	float:left;
+	margin:10px 0 0 0;
+}
+
+.wip_icons .preview {
+	width:80px;
+	height:80px;
+	border:solid 4px #fff;
+	outline:solid 1px #ddd;
+	background-color:#CCC;
+}
+
+.wip_inputbox .upload-preview {
+	margin:15px 0 15px 20%;
+	max-width: 78%;
+}
+
+.wip_input label,.wip_input em,
+.wip_icons label,.wip_icons em {
+	display:block;
+	margin:5px 0;
+}
+
+.input-left {
+	float:left;
+	width:39%;
+	vertical-align:top;
+	padding:0 0 14px 0;
+}
+
+.input-right {
+	float:right;
+	width:59%;
+	padding:10px 0 0 0
+}
+
+.wip_inputbox.wip_input {
+	padding:0;
+	border-top:none;
+	border-bottom:none;
+}
+
+.wip_inputbox.wip_input label {
+	width:inherit;
+	padding:0;
+	float:none;
+}
+
+.wip_inputbox.wip_input .button {
+	margin:0;
+}
+
+h2.title, #poststuff h2 { 
+	font-size: 14px;
+	font-family: Geneva, sans-serif;
+	color: #606060;
+	height: 32px;
+	line-height: 32px;
+	padding:10px 0 0 0;
+}
+
+.message_save {
+	width:98%;
+	text-align:center;
+}
