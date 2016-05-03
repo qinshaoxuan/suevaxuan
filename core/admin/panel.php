@@ -18,9 +18,9 @@
 
 				<h2> <?php echo suevafree_theme_data('Name') . " " . suevafree_theme_data('Version');  ?> </h2>
 
-                <h1> <?php _e( 'To Activate All Features, Please Upgrade to Premium version!','seanlite'); ?> </h1>
+                <h1> <?php _e( '本主题仅供个人学习研究使用，请勿作为各种商业用途，主题版权归www.themeinprogress.com所有。','seanlite'); ?> </h1>
                 
-                <div class="big-button"> <a href="https://www.themeinprogress.com/sueva/?ref=panel" target="_blank"> GET PREMIUM VERSION </a></div>
+                <div class="big-button"> <a href="https://www.themeinprogress.com/sueva/" target="_blank"> 获取原版 </a></div>
                 
                 </div>
                 

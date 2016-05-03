@@ -5,7 +5,7 @@ wordpress主题suevafree 修改版
 www.qinshaoxuan.com
 
 ###声明
-本模板仅供个人学习研究使用，请勿作为各种商业用户，主题版权归www.themeinprogress.com所有。
+本主题仅供个人学习研究使用，请勿作为各种商业用途，主题版权归www.themeinprogress.com所有。
 原版地址：www.themeinprogress.com/sueva/
 
 ### Ver 1.0.0 (2016-05-01)

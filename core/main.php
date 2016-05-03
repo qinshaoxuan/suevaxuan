@@ -306,8 +306,7 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
 function suevafree_option_panel() {
         global $wp_admin_bar, $wpdb;
     	
-		$wp_admin_bar->add_menu( array( 'id' => 'theme_options', 'title' => '<span> Theme Options </span>', 'href' => get_admin_url() . 'themes.php?page=themeoption' ) );
-        $wp_admin_bar->add_menu( array( 'id' => 'get_premium', 'title' => '<span> Get Premium </span>', 'href' => get_admin_url() . 'themes.php?page=getpremium' ) );
+		$wp_admin_bar->add_menu( array( 'id' => 'theme_options', 'title' => '<span> 主题设置 </span>', 'href' => get_admin_url() . 'themes.php?page=themeoption' ) );
 
 }
 

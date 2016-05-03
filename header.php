@@ -3,7 +3,6 @@
 <head>
 
 
-<link id="favicon" href="http://www.qinshaoxuan.com/wp-content/uploads/2015/08/favicon.ico" rel="icon" type="image/x-icon" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 

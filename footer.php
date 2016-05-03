@@ -19,8 +19,8 @@
 				<?php if (suevafree_setting('suevafree_copyright_text')): ?>
                    <?php echo stripslashes(suevafree_setting('suevafree_copyright_text')); ?>
                 <?php else: ?>
-                  <!-- <?php _e('Copyright','wip'); ?> -->© 2015-<?php echo date("Y"); ?> <?php echo get_bloginfo("name"); ?>  
-                <?php endif; ?>   | Theme by Theme in Progress | Proudly powered by WordPress| <a href="http://www.miitbeian.gov.cn/">蜀ICP备15025040号</a>
+                  &copy; <?php echo date("Y"); ?> <?php echo get_bloginfo("name"); ?>  
+                <?php endif; ?>
             </p>
             </div>
             <div class="span5" >

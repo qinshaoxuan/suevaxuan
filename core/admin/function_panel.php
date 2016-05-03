@@ -4,8 +4,7 @@
 function suevafree_add_menu() {
 	global $suevafree_themename, $suevafree_adminmenuname,$suevafree_optionfile;
 	
-	add_theme_page("Theme Options", "Theme Options", 'administrator',  'themeoption', 'suevafree_themeoption');
-	add_theme_page("Get Premium", "Get Premium", 'administrator',  'getpremium', 'suevafree_getpremium');
+	add_theme_page("主题设置", "主题设置", 'administrator',  'themeoption', 'suevafree_themeoption');
 }
 
 add_action('admin_menu', 'suevafree_add_menu'); 
@@ -17,7 +16,6 @@ function suevafree_add_script() {
      add_thickbox();
 
 	 $file_dir = get_template_directory_uri()."/core/admin/include";
-	 wp_enqueue_style ( 'google-fonts', '//fonts.useso.com/css?family=Roboto');
 	 wp_enqueue_style ( 'suevafree_panel', $file_dir.'/css/wip_panel.css' ); 
 
 	 wp_enqueue_script ( 'jquery.custom', $file_dir.'/js/jquery.custom.js',array('jquery','media-upload','thickbox'),'1.0',true ); 
@@ -102,10 +100,4 @@ function suevafree_themeoption() {
 
 	}
 
-function suevafree_getpremium() {	?>
-
-	<a href="http://www.themeinprogress.com/sueva/?ref=panel" target="_blank" >
-    	<img src="http://www.themeinprogress.com/images/suevapremium.jpg" alt="Get Premium" style="margin:15px auto" />
-    </a>
-
-<?php } ?>
+?>
