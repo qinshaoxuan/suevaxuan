@@ -7,7 +7,7 @@ www.qinshaoxuan.com
 ###声明
 本主题仅供个人学习研究使用，请勿作为各种商业用途，主题版权归[www.themeinprogress.com](www.themeinprogress.com)所有。
 
-原版地址：[sueva](www.themeinprogress.com/sueva/)
+原版地址：[sueva](http://www.themeinprogress.com/sueva/)
 
 ### Ver 1.0.0 (2016-05-01)
 1. 修改部分CSS代码
