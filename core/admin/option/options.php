@@ -158,7 +158,7 @@ array( "type" => "begintab",
 		   
 	array( "name" => __( "QQ Url","wip"),
 	       "desc" => __( "输入 QQ Url (隐藏图标则为空)","wip"),
-	       "id" => $shortname."_footer_facebook_button",
+	       "id" => $shortname."_footer_QQ_button",
 	       "type" => "text",
 	       "std" => ""),
 		   
@@ -186,9 +186,9 @@ array( "type" => "begintab",
 	       "type" => "text",
 	       "std" => ""),
 
-	array( "name" => __( "Myspace Url","wip"),
-	       "desc" => __( "Insert Myspace Url (empty if you want to hide the button)","wip"),
-	       "id" => $shortname."_footer_myspace_button",
+	array( "name" => __( "Admin Url","wip"),
+	       "desc" => __( "Insert Admin Url (empty if you want to hide the button)","wip"),
+	       "id" => $shortname."_footer_admin_button",
 	       "type" => "text",
 	       "std" => ""),
 

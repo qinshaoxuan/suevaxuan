@@ -285,7 +285,7 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
 	"suevafree_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "full",
-	"suevafree_footer_facebook_button" => "#",
+	"suevafree_footer_QQ_button" => "#",
 	"suevafree_footer_twitter_button" => "#",
 	"suevafree_footer_skype_button" => "#",
 	"suevafree_view_comments" => "on",
@@ -384,8 +384,21 @@ add_filter('thematic_dropdown_options','suevafree_dropdown_options');
 
 function suevafree_socials() {
 	
-	$socials = array ("facebook","twitter","flickr","google","linkedin","myspace","pinterest","tumblr","youtube","vimeo");
-	/*
+	
+	if (suevafree_setting('suevafree_footer_skype_button')): 
+    	echo '<a href="skype:'.suevafree_setting('suevafree_footer_skype_button').'" title="Skype" class="social skype"> Skype  </a>'; 
+	endif; 
+
+	if (suevafree_setting('suevafree_footer_admin_button')): 
+    	echo '<a href="'.suevafree_setting('suevafree_footer_admin_button').'" title="Admin" class="social admin" data-no-instant> Admin  </a>'; 
+	endif; 
+
+	if (suevafree_setting('suevafree_footer_email_button')): 
+    	echo '<a href="mailto:'.suevafree_setting('suevafree_footer_email_button').'" title="Email" class="social email"> Email  </a>'; 
+	endif; 
+
+	$socials = array ("QQ","twitter","flickr","google","linkedin","pinterest","tumblr","youtube","vimeo");
+	
 	foreach ( $socials as $social ) {
 		
 		if (suevafree_setting('suevafree_footer_'.$social.'_button')): 
@@ -395,25 +408,9 @@ function suevafree_socials() {
 		endif;
 
 	}
-	*/
-	if (suevafree_setting('suevafree_footer_skype_button')): 
-    	echo '<a href="skype:'.suevafree_setting('suevafree_footer_skype_button').'" title="Skype" class="social skype"> Skype  </a>'; 
-	endif; 
 
-	if (suevafree_setting('suevafree_footer_myspace_button')): 
-    	echo '<a href="http://www.qinshaoxuan.com/wp-admin/" title="Admin" class="social myspace" data-no-instant> Admin  </a>'; 
-	endif; 
-
-	if (suevafree_setting('suevafree_footer_email_button')): 
-    	echo '<a href="'.suevafree_setting('suevafree_footer_email_button').'" title="Email" class="social email"> Email  </a>'; 
-	endif; 
-
-	if (suevafree_setting('suevafree_footer_facebook_button')): 
-    	echo '<a href="http://wpa.qq.com/msgrd?v=3&uin=459440330&site=qq&menu=yes" title="QQ" class="social facebook"> QQ  </a>'; 
-	endif;
-/*
 	if (suevafree_setting('suevafree_footer_rss_button') == "on"): 
     	echo '<a href="'; bloginfo('rss2_url'); echo '" title="Rss" class="social rss"> Rss  </a> ';
 	endif; 
-*/
+
 }?>

@@ -1532,8 +1532,8 @@ ul#twitter_update_list li {
 	background-image: url(images/icons/tipsy.gif);
 }
 
-a.facebook { 
-	background:url('images/icons/social/facebook.png') no-repeat;
+a.QQ { 
+	background:url('images/icons/social/qq.png') no-repeat;
 }
 a.flickr { 
 	background:url('images/icons/social/flickr.png') no-repeat;
@@ -1544,8 +1544,8 @@ a.google  {
 a.linkedin  { 
 	background:url('images/icons/social/linkedin.png') no-repeat;
 }
-a.myspace  { 
-	background:url('images/icons/social/myspace.png') no-repeat;
+a.admin  { 
+	background:url('images/icons/social/admin.png') no-repeat;
 }
 a.pinterest {  
 	background:url('images/icons/social/pinterest.png') no-repeat;
