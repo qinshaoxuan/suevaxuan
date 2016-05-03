@@ -17,7 +17,7 @@ function suevafree_add_script() {
      add_thickbox();
 
 	 $file_dir = get_template_directory_uri()."/core/admin/include";
-	 wp_enqueue_style ( 'google-fonts', '//fonts.googleapis.com/css?family=Roboto');
+	 wp_enqueue_style ( 'google-fonts', '//fonts.useso.com/css?family=Roboto');
 	 wp_enqueue_style ( 'suevafree_panel', $file_dir.'/css/wip_panel.css' ); 
 
 	 wp_enqueue_script ( 'jquery.custom', $file_dir.'/js/jquery.custom.js',array('jquery','media-upload','thickbox'),'1.0',true ); 
