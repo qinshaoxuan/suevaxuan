@@ -289,6 +289,7 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
 	"suevafree_footer_twitter_button" => "#",
 	"suevafree_footer_skype_button" => "#",
 	"suevafree_view_comments" => "on",
+	"suevafree_view_comments_declaraction" => "off",
 	"suevafree_footer_rss_button" => "on",
 	"suevafree_category_layout" => "full",
 
