@@ -20,3 +20,4 @@ www.qinshaoxuan.com
 * 代码高亮：Crayon Syntax Highlighter
 * 数学公式：LaTeX for WordPress
 * 评论：多说
+* 缓存：WP Super Cache
