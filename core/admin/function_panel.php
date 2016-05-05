@@ -64,7 +64,7 @@ function suevafree_save_option ( $panel ) {
 						else if ( ( isset( $value['id']) ) && ( isset( $_POST[$value["id"]] ) ) ) 	
 			
 							{	
-								if ( $value["id"] == "suevafree_copyright_text"):
+								if ( $value["id"] == "suevafree_copyright_text"||$value["id"] == "suevafree_comments_declaraction_text"):
 									$current[$value["id"]] = $_REQUEST[$value["id"]];
 								else:
 									$current[$value["id"]] = sanitize_text_field( $_REQUEST[$value["id"]] );
