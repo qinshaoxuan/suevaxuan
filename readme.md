@@ -9,6 +9,9 @@ www.qinshaoxuan.com
 
 原版地址：[sueva](http://www.themeinprogress.com/sueva/)
 
+### Ver 1.1.0 (2016-05-05)
+1. 增加时间轴归档页面模板，可在页面属性中选择archives模板使用
+
 ### Ver 1.0.0 (2016-05-01)
 1. 修改部分CSS代码
 2. 修复了原版大部分BUG
