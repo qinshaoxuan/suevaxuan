@@ -28,4 +28,12 @@ jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({
 			social_tools: false
 });
 
-});          
+});  
+
+
+jQuery('.archives ul.archives-monthlisting').hide();
+jQuery('.archives ul.archives-monthlisting:first').show();
+jQuery('.archives .m-title').click(function() {
+    jQuery(this).next().slideToggle('fast');
+    return false;
+});        
