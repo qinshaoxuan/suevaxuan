@@ -1804,7 +1804,7 @@ a.email  {
 .archives li a:hover .archive-date:after{background:#ff5c43;-webkit-transition: all .3s ease;}
 .archives li a:hover .archive-date{color: #ff5c43;-webkit-transition: all .3s ease;}
 .archives li a .archive-date{display: table-cell;width:100px;font-size:12px;text-indent:20px;color: #A9A9A9;position: relative;-webkit-transition: all .3s ease;}
-.archives li a .atitle{display: table-cell;padding:0 15px;position: relative}
+.archives li a .atitle{display: table-cell;padding:0 15px;position: relative;font-family: Abel, Consolas, Helvetica, Tahoma, Arial, 'Microsoft YaHei', 微软雅黑, SimSun, 宋体, Heiti, 黑体, sans-serif;}
 .archives li a .archive-date:after{position:absolute;left:101px;background:#ccc;height:8px;width:8px;border-radius:6px;top:6px;content:"";-webkit-transition: all .3s ease;}
 .archives li a .archive-date:before{position:absolute;left:99px;background:#fff;height:12px;width:12px;border-radius:6px;top:4px;content:""}
 .archives{position:relative;padding:10px 0}
