@@ -34,7 +34,7 @@
 					
 					wp_link_pages(); 
 					
-					if (suevafree_setting('suevafree_view_comments') == "on" ) :
+					if (suevaxuan_setting('suevaxuan_view_comments') == "on" ) :
 						comments_template();
 					endif;
 					

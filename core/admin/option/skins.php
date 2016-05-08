@@ -4,30 +4,30 @@ $skins = array(
 
 "Orange" => array(
 
-    "suevafree_skins" => "Orange", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Orange", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#ff6644", 
-    "suevafree_link_color_hover" => "#d14a2b", 
-    "suevafree_border_color" => "#ff6644", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#ff6644", 
+    "suevaxuan_link_color_hover" => "#d14a2b", 
+    "suevaxuan_border_color" => "#ff6644", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
@@ -35,30 +35,30 @@ $skins = array(
 
 "Cyan" => array(
 
-    "suevafree_skins" => "Cyan", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Cyan", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#48c2ae", 
-    "suevafree_link_color_hover" => "#3aa694", 
-    "suevafree_border_color" => "#48c2ae", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#48c2ae", 
+    "suevaxuan_link_color_hover" => "#3aa694", 
+    "suevaxuan_border_color" => "#48c2ae", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
@@ -66,30 +66,30 @@ $skins = array(
 
 "Blue" => array(
 
-    "suevafree_skins" => "Blue", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Blue", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#0090ff", 
-    "suevafree_link_color_hover" => "#0074cc", 
-    "suevafree_border_color" => "#0090ff", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#0090ff", 
+    "suevaxuan_link_color_hover" => "#0074cc", 
+    "suevaxuan_border_color" => "#0090ff", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
@@ -97,30 +97,30 @@ $skins = array(
 
 "Red" => array(
 
-    "suevafree_skins" => "Red", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Red", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#b93333", 
-    "suevafree_link_color_hover" => "#872424", 
-    "suevafree_border_color" => "#b93333", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#b93333", 
+    "suevaxuan_link_color_hover" => "#872424", 
+    "suevaxuan_border_color" => "#b93333", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
@@ -128,30 +128,30 @@ $skins = array(
 
 "Pink" => array(
 
-    "suevafree_skins" => "Pink", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Pink", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#c71c77", 
-    "suevafree_link_color_hover" => "#941559", 
-    "suevafree_border_color" => "#c71c77", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#c71c77", 
+    "suevaxuan_link_color_hover" => "#941559", 
+    "suevaxuan_border_color" => "#c71c77", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
@@ -159,30 +159,30 @@ $skins = array(
 
 "Yellow" => array(
 
-    "suevafree_skins" => "Yellow", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Yellow", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#f0b70c", 
-    "suevafree_link_color_hover" => "#bd9009", 
-    "suevafree_border_color" => "#f0b70c", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#f0b70c", 
+    "suevaxuan_link_color_hover" => "#bd9009", 
+    "suevaxuan_border_color" => "#f0b70c", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
@@ -190,30 +190,30 @@ $skins = array(
 
 "Green" => array(
 
-    "suevafree_skins" => "Green", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Green", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#84ad37", 
-    "suevafree_link_color_hover" => "#5d7a27", 
-    "suevafree_border_color" => "#84ad37", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#84ad37", 
+    "suevaxuan_link_color_hover" => "#5d7a27", 
+    "suevaxuan_border_color" => "#84ad37", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
@@ -221,30 +221,30 @@ $skins = array(
 
 "Purple" => array(
 
-    "suevafree_skins" => "Purple", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Purple", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#c71c77", 
-    "suevafree_link_color_hover" => "#941559", 
-    "suevafree_border_color" => "#c71c77", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#c71c77", 
+    "suevaxuan_link_color_hover" => "#941559", 
+    "suevaxuan_border_color" => "#c71c77", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
@@ -252,37 +252,37 @@ $skins = array(
 
 "Pink" => array(
 
-    "suevafree_skins" => "Pink", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Pink", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#f97c8a", 
-    "suevafree_link_color_hover" => "#f07381", 
-    "suevafree_border_color" => "#f97c8a", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#f97c8a", 
+    "suevaxuan_link_color_hover" => "#f07381", 
+    "suevaxuan_border_color" => "#f97c8a", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "default",
 
 ),
 
 );
-	$current = $skins[$_REQUEST["suevafree_skins"]];
-	$suevafree_message_action = 'Options saved successfully.';
+	$current = $skins[$_REQUEST["suevaxuan_skins"]];
+	$suevaxuan_message_action = 'Options saved successfully.';
 	
 ?>

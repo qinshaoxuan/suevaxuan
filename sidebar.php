@@ -1,4 +1,4 @@
-<?php if ( suevafree_template('span') == "span8" ) : ?>
+<?php if ( suevaxuan_template('span') == "span8" ) : ?>
         
 	<section id="sidebar" class="pin-article span4">
     

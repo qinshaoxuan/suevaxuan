@@ -5,11 +5,11 @@
 <div class="container">
 	<div class="row">
        
-    <div <?php post_class(array('pin-article', suevafree_template('span') , suevafree_template('sidebar'))); ?> >
+    <div <?php post_class(array('pin-article', suevaxuan_template('span') , suevaxuan_template('sidebar'))); ?> >
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         
-		<?php do_action('suevafree_postformat'); ?>
+		<?php do_action('suevaxuan_postformat'); ?>
 	        
         <div style="clear:both"></div>
         

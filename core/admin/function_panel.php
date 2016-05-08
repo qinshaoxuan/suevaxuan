@@ -1,49 +1,49 @@
 <?php
 
 
-function suevafree_add_menu() {
-	global $suevafree_themename, $suevafree_adminmenuname,$suevafree_optionfile;
+function suevaxuan_add_menu() {
+	global $suevaxuan_themename, $suevaxuan_adminmenuname,$suevaxuan_optionfile;
 	
-	add_theme_page("主题设置", "主题设置", 'administrator',  'themeoption', 'suevafree_themeoption');
+	add_theme_page("主题设置", "主题设置", 'administrator',  'themeoption', 'suevaxuan_themeoption');
 }
 
-add_action('admin_menu', 'suevafree_add_menu'); 
+add_action('admin_menu', 'suevaxuan_add_menu'); 
 
-function suevafree_add_script() {
+function suevaxuan_add_script() {
 	
 	 global $wp_version;
      wp_enqueue_style( "thickbox" );
      add_thickbox();
 
 	 $file_dir = get_template_directory_uri()."/core/admin/include";
-	 wp_enqueue_style ( 'suevafree_panel', $file_dir.'/css/wip_panel.css' ); 
+	 wp_enqueue_style ( 'suevaxuan_panel', $file_dir.'/css/wip_panel.css' ); 
 
 	 wp_enqueue_script ( 'jquery.custom', $file_dir.'/js/jquery.custom.js',array('jquery','media-upload','thickbox'),'1.0',true ); 
 	 wp_enqueue_script ( 'wip_on_off', $file_dir.'/js/wip_on_off.js','3.5', true); 
 	 wp_enqueue_style  ( 'wip_on_off', $file_dir.'/css/wip_on_off.css' );
 }
 
-add_action('admin_init', 'suevafree_add_script');
+add_action('admin_init', 'suevaxuan_add_script');
 
-function suevafree_save_option ( $panel ) {
+function suevaxuan_save_option ( $panel ) {
 	
-	global $suevafree_message_action;
+	global $suevaxuan_message_action;
 	
-	$suevafree_setting = get_option( suevafree_themename() );
+	$suevaxuan_setting = get_option( suevaxuan_themename() );
 	
-	if ( $suevafree_setting != false ) 
+	if ( $suevaxuan_setting != false ) 
 						
 		{
-			$suevafree_setting = maybe_unserialize( $suevafree_setting );
+			$suevaxuan_setting = maybe_unserialize( $suevaxuan_setting );
 		} 
 						
 	else 
 						
 		{
-			$suevafree_setting = array();
+			$suevaxuan_setting = array();
 		}      
 		
-	if ( "Save" == suevafree_request('action') ) {
+	if ( "Save" == suevaxuan_request('action') ) {
 
 		foreach ($panel as $element ) {
 			
@@ -57,25 +57,25 @@ function suevafree_save_option ( $panel ) {
 		
 							{
 								require_once get_template_directory() . '/core/admin/option/skins.php';
-								update_option( suevafree_themename(), array_merge( $suevafree_setting  ,$current) );
+								update_option( suevaxuan_themename(), array_merge( $suevaxuan_setting  ,$current) );
 								break;
 							} 
 						
 						else if ( ( isset( $value['id']) ) && ( isset( $_POST[$value["id"]] ) ) ) 	
 			
 							{	
-								if ( $value["id"] == "suevafree_copyright_text"||$value["id"] == "suevafree_comments_declaraction_text"):
+								if ( $value["id"] == "suevaxuan_copyright_text"||$value["id"] == "suevaxuan_comments_declaraction_text"):
 									$current[$value["id"]] = $_REQUEST[$value["id"]];
 								else:
 									$current[$value["id"]] = sanitize_text_field( $_REQUEST[$value["id"]] );
 								endif; 
 								
-								update_option( suevafree_themename(), array_merge( $suevafree_setting  ,$current) );
+								update_option( suevaxuan_themename(), array_merge( $suevaxuan_setting  ,$current) );
 							}
 							
 								
 							
-						$suevafree_message_action = 'Options saved successfully.';
+						$suevaxuan_message_action = 'Options saved successfully.';
 					
 					}
 				
@@ -85,17 +85,17 @@ function suevafree_save_option ( $panel ) {
 		}
 }
 
-function suevafree_message () {
-		global $suevafree_message_action;
-		if (isset($suevafree_message_action))
-		echo '<div id="message" class="updated fade message_save wip_message"><p><strong>'.$suevafree_message_action.'</strong></p></div>';
+function suevaxuan_message () {
+		global $suevaxuan_message_action;
+		if (isset($suevaxuan_message_action))
+		echo '<div id="message" class="updated fade message_save wip_message"><p><strong>'.$suevaxuan_message_action.'</strong></p></div>';
 	}
 
 
-function suevafree_themeoption() {
+function suevaxuan_themeoption() {
 
-		$suevafree_themename = "Sueva";
-		$shortname = "suevafree";
+		$suevaxuan_themename = "Sueva";
+		$shortname = "suevaxuan";
 		require_once get_template_directory() . '/core/admin/option/options.php';   
 
 	}

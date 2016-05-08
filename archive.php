@@ -3,9 +3,9 @@
 <div class="container">
 	<div class="row" id="blog" >
     
-	<?php if ( ( suevafree_template('sidebar') == "left-sidebar" ) || ( suevafree_template('sidebar') == "right-sidebar" ) ) : ?>
+	<?php if ( ( suevaxuan_template('sidebar') == "left-sidebar" ) || ( suevaxuan_template('sidebar') == "right-sidebar" ) ) : ?>
         
-        <div class="<?php echo suevafree_template('span') .' '. suevafree_template('sidebar'); ?>"> 
+        <div class="<?php echo suevaxuan_template('span') .' '. suevaxuan_template('sidebar'); ?>"> 
         <div class="row"> 
         
     <?php endif; ?>
@@ -13,7 +13,7 @@
 
 		<?php if ( have_posts() ) :  ?>
 		
-        <div <?php post_class(array('pin-article', suevafree_template('span') )); ?> >
+        <div <?php post_class(array('pin-article', suevaxuan_template('span') )); ?> >
 
 			<article class="article category">
 				<?php if (is_tag()) { ?>
@@ -35,9 +35,9 @@
 		
 		<?php while ( have_posts() ) : the_post(); ?>
 
-        <div <?php post_class(array('pin-article', suevafree_template('span') )); ?> >
+        <div <?php post_class(array('pin-article', suevaxuan_template('span') )); ?> >
     
-				<?php do_action('suevafree_postformat'); ?>
+				<?php do_action('suevaxuan_postformat'); ?>
         
                 <div style="clear:both"></div>
             
@@ -45,7 +45,7 @@
 		
 		<?php endwhile; else:  ?>
 
-        <div <?php post_class(array('pin-article', suevafree_template('span') )); ?> >
+        <div <?php post_class(array('pin-article', suevaxuan_template('span') )); ?> >
     
                 <article class="article category">
                     
@@ -58,14 +58,14 @@
 	
 		<?php endif; ?>
         
-	<?php if ( ( suevafree_template('sidebar') == "left-sidebar" ) || ( suevafree_template('sidebar') == "right-sidebar" ) ) : ?>
+	<?php if ( ( suevaxuan_template('sidebar') == "left-sidebar" ) || ( suevaxuan_template('sidebar') == "right-sidebar" ) ) : ?>
         
         </div>
         </div>
         
     <?php endif; ?>
 
-	<?php if ( suevafree_template('span') == "span8" ) :  ?>
+	<?php if ( suevaxuan_template('span') == "span8" ) :  ?>
 
         <section id="sidebar" class="pin-article span4">
             <div class="sidebar-box">

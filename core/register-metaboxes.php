@@ -2,18 +2,18 @@
 
 require_once get_template_directory() . '/core/metaboxes-fields.php';
 
-function suevafree_addmetabox() {
-	add_meta_box( 'content', 'Content Settings', 'suevafree_contents', 'post', 'normal', 'high' );
+function suevaxuan_addmetabox() {
+	add_meta_box( 'content', 'Content Settings', 'suevaxuan_contents', 'post', 'normal', 'high' );
 }
-add_action( 'add_meta_boxes', 'suevafree_addmetabox' );
+add_action( 'add_meta_boxes', 'suevaxuan_addmetabox' );
 
-function suevafree_contents( $post, $post_id )
+function suevaxuan_contents( $post, $post_id )
 {
-	global $suevafree_article; ?>
+	global $suevaxuan_article; ?>
     
     <?php
 	
-	foreach ($suevafree_article as $value) {
+	foreach ($suevaxuan_article as $value) {
 	switch ( $value['type'] ) { 
 	
 	case 'title':  ?>
@@ -88,13 +88,13 @@ function suevafree_contents( $post, $post_id )
 
 }
 
-add_action( 'save_post', 'suevafree_metabox_saves' );
+add_action( 'save_post', 'suevaxuan_metabox_saves' );
 
-function suevafree_metabox_saves( $post_id  ) {
+function suevaxuan_metabox_saves( $post_id  ) {
 	
-		global $suevafree_article ;
+		global $suevaxuan_article ;
 		
-		foreach ($suevafree_article as $value) {
+		foreach ($suevaxuan_article as $value) {
 		
 		if(isset($_POST[$value['id']])) 
 			$new = $_POST[$value['id']];

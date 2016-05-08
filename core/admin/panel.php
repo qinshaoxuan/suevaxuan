@@ -2,9 +2,9 @@
 
 	function thepane( $panel ) { 
 	
-	suevafree_save_option ( $panel );
+	suevaxuan_save_option ( $panel );
 
-	$suevafree_setting = get_option( suevafree_themename() );
+	$suevaxuan_setting = get_option( suevaxuan_themename() );
 
 	if (!isset($_GET['tab']))  { $_GET['tab'] = "General"; }
 	
@@ -16,7 +16,7 @@
 
                 <div class="banner">
 
-				<h2> <?php echo suevafree_theme_data('Name') . " " . suevafree_theme_data('Version');  ?> </h2>
+				<h2> <?php echo suevaxuan_theme_data('Name') . " " . suevaxuan_theme_data('Version');  ?> </h2>
 
                 <h1> <?php _e( '本主题仅供个人学习研究使用，请勿作为各种商业用途，主题版权归www.themeinprogress.com所有。','seanlite'); ?> </h1>
                 
@@ -40,8 +40,8 @@
 						
 						<h2 class="maintitle"> 
 							
-							<?php echo suevafree_theme_data('Name'); _e( ' Settings','wip'); ?><br />
-							<span><?php _e( 'Version ','wip'); echo suevafree_theme_data('Version'); ?></span>
+							<?php echo suevaxuan_theme_data('Name'); _e( ' Settings','wip'); ?><br />
+							<span><?php _e( 'Version ','wip'); echo suevaxuan_theme_data('Version'); ?></span>
 								
 						</h2>
 						
@@ -51,7 +51,7 @@
 					
 				</div>
 
-				<?php suevafree_message($panel); ?>
+				<?php suevaxuan_message($panel); ?>
 
 				<div id="tabs">
                 
@@ -111,7 +111,7 @@
 				
 						<?php 
 			
-							if ( ('Save' == suevafree_request('action'))  && ( $value['id'] == suevafree_request('element-opened')) ) { 
+							if ( ('Save' == suevaxuan_request('action'))  && ( $value['id'] == suevaxuan_request('element-opened')) ) { 
 								$class=" inactive"; $style='style="display:block;"'; } else { $class="";  $style=''; 
 							}  
 				
@@ -153,9 +153,9 @@
 			
 								$checked ='';
 			
-								if ( suevafree_setting($value['id']) != false ) {
+								if ( suevaxuan_setting($value['id']) != false ) {
 			
-									foreach (suevafree_setting($value['id']) as $check ) { 
+									foreach (suevaxuan_setting($value['id']) as $check ) { 
 			
 									if ($check == $val )  { $checked ='checked="checked"'; } } 
 			
@@ -178,9 +178,9 @@
 			
 								$checked ='';
 			
-								if ( suevafree_setting($value['id']) != false ) {
+								if ( suevaxuan_setting($value['id']) != false ) {
 			
-									foreach (suevafree_setting($value['id']) as $check ) { 
+									foreach (suevaxuan_setting($value['id']) as $check ) { 
 			
 									if ($check == $page->ID )  { $checked ='checked="checked"'; } } 
 			
@@ -202,7 +202,7 @@
 			
 								<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
 								
-								<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( suevafree_setting($value['id']) != "") { echo stripslashes(suevafree_setting($value['id'])); } else { echo $value['std']; } ?>" />
+								<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( suevaxuan_setting($value['id']) != "") { echo stripslashes(suevaxuan_setting($value['id'])); } else { echo $value['std']; } ?>" />
 								
 								<p> <?php echo $value['desc']; ?> </p>
 			
@@ -230,7 +230,7 @@
 			
 								<label for="bl_custom_style"> <?php echo $value['name']; ?> </label>
 								
-								<textarea name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( suevafree_setting($value['id']) != "") { echo stripslashes(suevafree_setting($value['id'])); } else { echo $value['std']; } ?></textarea>
+								<textarea name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( suevaxuan_setting($value['id']) != "") { echo stripslashes(suevaxuan_setting($value['id'])); } else { echo $value['std']; } ?></textarea>
 			
 								<p><?php echo $value['desc']; ?></p>
 			
@@ -244,11 +244,11 @@
 			
 								<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
 			
-								<div class="bool-slider <?php if ( suevafree_setting($value['id']) != "") { echo stripslashes(suevafree_setting($value['id'])); } else { echo $value['std']; } ?>">
+								<div class="bool-slider <?php if ( suevaxuan_setting($value['id']) != "") { echo stripslashes(suevaxuan_setting($value['id'])); } else { echo $value['std']; } ?>">
 									<div class="inset">
 										<div class="control"></div>
 									</div>
-									<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" class="on-off" type="hidden" value="<?php if ( suevafree_setting($value['id']) != "") { echo stripslashes(suevafree_setting($value['id'])); } else { echo $value['std']; } ?>" />
+									<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" class="on-off" type="hidden" value="<?php if ( suevaxuan_setting($value['id']) != "") { echo stripslashes(suevaxuan_setting($value['id'])); } else { echo $value['std']; } ?>" />
 								</div>  
 								
 								<div class="clear"></div>      
@@ -265,7 +265,7 @@
 			
 								<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
 			
-								<select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>"><?php foreach ($value['options'] as $option) { ?><option<?php if ( suevafree_setting($value['id']) == get_cat_id($option)) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?> value="<?php echo get_cat_id($option); ?>" ><?php echo $option; ?></option><?php } ?></select>
+								<select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>"><?php foreach ($value['options'] as $option) { ?><option<?php if ( suevaxuan_setting($value['id']) == get_cat_id($option)) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?> value="<?php echo get_cat_id($option); ?>" ><?php echo $option; ?></option><?php } ?></select>
 			 
 								<p><?php echo $value['desc']; ?></p>
 			
@@ -283,7 +283,7 @@
 								
 								<?php foreach ( $value['options'] as $val => $option ) { ?>  
 								
-								<option <?php if (( suevafree_setting( $value['id'] ) == $val) || ( ( !suevafree_setting($value['id'])) && ( $value['std'] == $val) )) { echo 'selected="selected"'; } ?> value="<?php echo $val; ?>"><?php echo $option; ?></option><?php } ?>  
+								<option <?php if (( suevaxuan_setting( $value['id'] ) == $val) || ( ( !suevaxuan_setting($value['id'])) && ( $value['std'] == $val) )) { echo 'selected="selected"'; } ?> value="<?php echo $val; ?>"><?php echo $option; ?></option><?php } ?>  
 								</select>  
 			 
 								<p><?php echo $value['desc']; ?></p>

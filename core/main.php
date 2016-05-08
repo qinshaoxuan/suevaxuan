@@ -4,7 +4,7 @@
 /* THEME DATA */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_theme_data($id) {
+function suevaxuan_theme_data($id) {
 	
 	$themedata = wp_get_theme();
 	return $themedata->get($id);
@@ -14,7 +14,7 @@ function suevafree_theme_data($id) {
 /* Admin class */
 /*-----------------------------------------------------------------------------------*/   
 
-function suevafree_admin_body_class( $classes ) {
+function suevaxuan_admin_body_class( $classes ) {
 	
 	global $wp_version;
 	
@@ -24,13 +24,13 @@ function suevafree_admin_body_class( $classes ) {
 		return $classes;
 }
 	
-add_filter( 'admin_body_class', 'suevafree_admin_body_class' );
+add_filter( 'admin_body_class', 'suevaxuan_admin_body_class' );
 
 /*-----------------------------------------------------------------------------------*/
 /* Body class */
 /*-----------------------------------------------------------------------------------*/   
 
-function suevafree_body_class($classes) {
+function suevaxuan_body_class($classes) {
 
 	$classes[] = 'custombody';
 		
@@ -38,13 +38,13 @@ function suevafree_body_class($classes) {
 	
 }
 
-add_filter('body_class', 'suevafree_body_class');
+add_filter('body_class', 'suevaxuan_body_class');
 
 /*-----------------------------------------------------------------------------------*/
 /* Post formats */
 /*-----------------------------------------------------------------------------------*/   
 
-function suevafree_setup() {
+function suevaxuan_setup() {
 
 	add_theme_support( 'post-formats', array( 'aside','gallery','quote','video','audio','link','status','chat','image' ) );
 	add_theme_support( 'automatic-feed-links' );
@@ -66,7 +66,7 @@ function suevafree_setup() {
 
 }
 
-add_action( 'after_setup_theme', 'suevafree_setup' );
+add_action( 'after_setup_theme', 'suevaxuan_setup' );
 
 /*-----------------------------------------------------------------------------------*/
 /* TAG TITLE */
@@ -74,7 +74,7 @@ add_action( 'after_setup_theme', 'suevafree_setup' );
 
 if ( ! function_exists( '_wp_render_title_tag' ) ) {
 
-	function suevafree_title( $title, $sep ) {
+	function suevaxuan_title( $title, $sep ) {
 		
 		global $paged, $page;
 	
@@ -94,9 +94,9 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 		
 	}
 
-	add_filter( 'wp_title', 'suevafree_title', 10, 2 );
+	add_filter( 'wp_title', 'suevaxuan_title', 10, 2 );
 
-	function suevafree_addtitle() {
+	function suevaxuan_addtitle() {
 		
 ?>
 
@@ -106,7 +106,7 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 
 	}
 
-	add_action( 'wp_head', 'suevafree_addtitle' );
+	add_action( 'wp_head', 'suevaxuan_addtitle' );
 
 }
 
@@ -114,10 +114,10 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) {
 /* Theme name */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_themename() {
+function suevaxuan_themename() {
 	
-	$suevafree_themename = "suevafree_theme_settings";
-	return $suevafree_themename;	
+	$suevaxuan_themename = "suevaxuan_theme_settings";
+	return $suevaxuan_themename;	
 	
 }
 
@@ -125,11 +125,11 @@ function suevafree_themename() {
 /* Theme settings */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_setting($id) {
+function suevaxuan_setting($id) {
 
-	$suevafree_setting = get_option(suevafree_themename());
-	if(isset($suevafree_setting[$id]))
-		return $suevafree_setting[$id];
+	$suevaxuan_setting = get_option(suevaxuan_themename());
+	if(isset($suevaxuan_setting[$id]))
+		return $suevaxuan_setting[$id];
 
 }
 
@@ -137,7 +137,7 @@ function suevafree_setting($id) {
 /* Post meta */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_postmeta($id) {
+function suevaxuan_postmeta($id) {
 
 	global $post;
 	
@@ -151,27 +151,27 @@ function suevafree_postmeta($id) {
 /* Content template */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_template($id) {
+function suevaxuan_template($id) {
 
 	$template = array ("full" => "span12" , "left-sidebar" => "span8" , "right-sidebar" => "span8" );
 
 	$span = $template["full"];
 	$sidebar =  "full";
 
-	if ( ( suevafree_setting('suevafree_home') )  && (  (is_home()) )  ){
+	if ( ( suevaxuan_setting('suevaxuan_home') )  && (  (is_home()) )  ){
 		
-		$span = $template[suevafree_setting('suevafree_home')];
-		$sidebar =  suevafree_setting('suevafree_home');
+		$span = $template[suevaxuan_setting('suevaxuan_home')];
+		$sidebar =  suevaxuan_setting('suevaxuan_home');
 
-	} else if ( ( suevafree_setting('suevafree_category_layout') )  && ( (is_category()) || (is_tag()) )  ){
+	} else if ( ( suevaxuan_setting('suevaxuan_category_layout') )  && ( (is_category()) || (is_tag()) )  ){
 		
-		$span = $template[suevafree_setting('suevafree_category_layout')];
-		$sidebar =  suevafree_setting('suevafree_category_layout');
+		$span = $template[suevaxuan_setting('suevaxuan_category_layout')];
+		$sidebar =  suevaxuan_setting('suevaxuan_category_layout');
 
-	} else if ( ( suevafree_postmeta('suevafree_template') )  && ( (is_page()) || (is_single())  )  ){
+	} else if ( ( suevaxuan_postmeta('suevaxuan_template') )  && ( (is_page()) || (is_single())  )  ){
 
-		$span = $template[suevafree_postmeta('suevafree_template')];
-		$sidebar =  suevafree_postmeta('suevafree_template');
+		$span = $template[suevaxuan_postmeta('suevaxuan_template')];
+		$sidebar =  suevaxuan_postmeta('suevaxuan_template');
 			
 	}
 	
@@ -183,14 +183,14 @@ function suevafree_template($id) {
 /* Excerpt */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_hide_excerpt_more() {
+function suevaxuan_hide_excerpt_more() {
 	return '';
 }
 
-add_filter('the_content_more_link', 'suevafree_hide_excerpt_more');
-add_filter('excerpt_more', 'suevafree_hide_excerpt_more');
+add_filter('the_content_more_link', 'suevaxuan_hide_excerpt_more');
+add_filter('excerpt_more', 'suevaxuan_hide_excerpt_more');
 
-function suevafree_excerpt() {
+function suevaxuan_excerpt() {
 	
 	global $post,$more;
 	
@@ -211,7 +211,7 @@ function suevafree_excerpt() {
 /* Request */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_request($id) {
+function suevaxuan_request($id) {
 	
 	if ( isset ( $_REQUEST[$id])) 
 	return $_REQUEST[$id];	
@@ -229,7 +229,7 @@ if ( ! isset( $content_width ) )
 /* SCRIPTS */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_enqueue_scripts_styles() {
+function suevaxuan_enqueue_scripts_styles() {
 
 	wp_enqueue_style( "bootstrap", get_template_directory_uri()."/css/bootstrap.min.css");
 	wp_enqueue_style( "bootstrap-responsive", get_template_directory_uri()."/css/bootstrap-responsive.min.css");
@@ -244,7 +244,7 @@ function suevafree_enqueue_scripts_styles() {
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'suevafree_enqueue_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'suevaxuan_enqueue_scripts_styles' );
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -253,49 +253,49 @@ add_action( 'wp_enqueue_scripts', 'suevafree_enqueue_scripts_styles' );
 
 if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
 	
-	$suevafree_setting = get_option(suevafree_themename());
+	$suevaxuan_setting = get_option(suevaxuan_themename());
 
-	if (!$suevafree_setting) {	
+	if (!$suevaxuan_setting) {	
 	
 	$skins = array( 
 	
-    "suevafree_skins" => "Orange", 
-    "suevafree_logo_font" => "Allura", 
-    "suevafree_logo_font_size" => "70px", 
-    "suevafree_logo_description_font" => "Abel", 
-    "suevafree_logo_description_font_size" => "14px", 
+    "suevaxuan_skins" => "Orange", 
+    "suevaxuan_logo_font" => "Allura", 
+    "suevaxuan_logo_font_size" => "70px", 
+    "suevaxuan_logo_description_font" => "Abel", 
+    "suevaxuan_logo_description_font_size" => "14px", 
 	
-    "suevafree_menu_font" => "Abel", 
-    "suevafree_menu_font_size" => "18px", 
+    "suevaxuan_menu_font" => "Abel", 
+    "suevaxuan_menu_font_size" => "18px", 
 	
-    "suevafree_titles_font" => "Abel", 
+    "suevaxuan_titles_font" => "Abel", 
 	
-    "suevafree_text_font_color" => "#616161", 
-    "suevafree_copyright_font_color" => "#ffffff", 
-    "suevafree_link_color" => "#ff6644", 
-    "suevafree_link_color_hover" => "#d14a2b", 
-    "suevafree_border_color" => "#ff6644", 
+    "suevaxuan_text_font_color" => "#616161", 
+    "suevaxuan_copyright_font_color" => "#ffffff", 
+    "suevaxuan_link_color" => "#ff6644", 
+    "suevaxuan_link_color_hover" => "#d14a2b", 
+    "suevaxuan_border_color" => "#ff6644", 
 
-	"suevafree_body_background" => "/images/background/patterns/pattern1.jpg",
-	"suevafree_body_background_repeat" => "repeat",
-	"suevafree_body_background_color" => "#f3f3f3",
+	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
+	"suevaxuan_body_background_repeat" => "repeat",
+	"suevaxuan_body_background_color" => "#f3f3f3",
 	
-	"suevafree_footer_background" => "/images/background/patterns/pattern2.jpg",
-	"suevafree_footer_background_repeat" => "repeat",
-	"suevafree_footer_background_color" => "#f3f3f3",
+	"suevaxuan_footer_background" => "/images/background/patterns/pattern2.jpg",
+	"suevaxuan_footer_background_repeat" => "repeat",
+	"suevaxuan_footer_background_color" => "#f3f3f3",
 
 	"home-default" => "full",
-	"suevafree_footer_QQ_button" => "#",
-	"suevafree_footer_twitter_button" => "#",
-	"suevafree_footer_skype_button" => "#",
-	"suevafree_view_comments" => "on",
-	"suevafree_view_comments_declaraction" => "off",
-	"suevafree_footer_rss_button" => "on",
-	"suevafree_category_layout" => "full",
+	"suevaxuan_footer_QQ_button" => "#",
+	"suevaxuan_footer_twitter_button" => "#",
+	"suevaxuan_footer_skype_button" => "#",
+	"suevaxuan_view_comments" => "on",
+	"suevaxuan_view_comments_declaraction" => "off",
+	"suevaxuan_footer_rss_button" => "on",
+	"suevaxuan_category_layout" => "full",
 
 	);
 
-	update_option( suevafree_themename(), $skins ); 
+	update_option( suevaxuan_themename(), $skins ); 
 	
 }
 }
@@ -304,20 +304,20 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
 /* Admin menu */
 /*-----------------------------------------------------------------------------------*/   
 
-function suevafree_option_panel() {
+function suevaxuan_option_panel() {
         global $wp_admin_bar, $wpdb;
     	
 		$wp_admin_bar->add_menu( array( 'id' => 'theme_options', 'title' => '<span> 主题设置 </span>', 'href' => get_admin_url() . 'themes.php?page=themeoption' ) );
 
 }
 
-add_action( 'admin_bar_menu', 'suevafree_option_panel', 1000 );
+add_action( 'admin_bar_menu', 'suevaxuan_option_panel', 1000 );
 
 /*-----------------------------------------------------------------------------------*/
 /* Prettyphoto at post gallery */
 /*-----------------------------------------------------------------------------------*/   
 
-function suevafree_prettyPhoto( $html, $id, $size, $permalink, $icon, $text ) {
+function suevaxuan_prettyPhoto( $html, $id, $size, $permalink, $icon, $text ) {
 	
     if ( ! $permalink )
         return str_replace( '<a', '<a data-rel="prettyPhoto" ', $html );
@@ -325,7 +325,7 @@ function suevafree_prettyPhoto( $html, $id, $size, $permalink, $icon, $text ) {
         return $html;
 }
 
-add_filter( 'wp_get_attachment_link', 'suevafree_prettyPhoto', 10, 6);
+add_filter( 'wp_get_attachment_link', 'suevaxuan_prettyPhoto', 10, 6);
 
 /*-----------------------------------------------------------------------------------*/
 /* Localize theme */
@@ -337,80 +337,80 @@ load_theme_textdomain('wip', get_template_directory(). '/languages');
 /* Remove category list rel */
 /*-----------------------------------------------------------------------------------*/   
 
-function suevafree_remove_category_list_rel($output)
+function suevaxuan_remove_category_list_rel($output)
 {
 	$output = str_replace('rel="category"', '', $output);
 	return $output;
 }
-add_filter('wp_list_categories', 'suevafree_remove_category_list_rel');
-add_filter('the_category', 'suevafree_remove_category_list_rel');
+add_filter('wp_list_categories', 'suevaxuan_remove_category_list_rel');
+add_filter('the_category', 'suevaxuan_remove_category_list_rel');
 
 /*-----------------------------------------------------------------------------------*/
 /* Remove thumbnail dimensions */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
+function suevaxuan_remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
     $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
     return $html;
 }
 
-add_filter( 'post_thumbnail_html', 'suevafree_remove_thumbnail_dimensions', 10, 3 );
+add_filter( 'post_thumbnail_html', 'suevaxuan_remove_thumbnail_dimensions', 10, 3 );
   
 /*-----------------------------------------------------------------------------------*/
 /* Remove css gallery */
 /*-----------------------------------------------------------------------------------*/ 
 
 
-function suevafree_my_gallery_style() {
+function suevaxuan_my_gallery_style() {
     return "<div class='gallery'>";
 }
 
-add_filter( 'gallery_style', 'suevafree_my_gallery_style', 99 );
+add_filter( 'gallery_style', 'suevaxuan_my_gallery_style', 99 );
 
 /*-----------------------------------------------------------------------------------*/
 /* Dropdown options */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_dropdown_options($dropdown_options) {
+function suevaxuan_dropdown_options($dropdown_options) {
 	$dropdown_options = '<script type="text/javascript" src="'. get_stylesheet_directory_uri().'/scripts/thematic-dropdowns.js"></script>';
 	return $dropdown_options;
 }
 
-add_filter('thematic_dropdown_options','suevafree_dropdown_options');
+add_filter('thematic_dropdown_options','suevaxuan_dropdown_options');
 
 
 /*-----------------------------------------------------------------------------------*/
 /* Socials */
 /*-----------------------------------------------------------------------------------*/ 
 
-function suevafree_socials() {
+function suevaxuan_socials() {
 	
 	
-	if (suevafree_setting('suevafree_footer_skype_button')): 
-    	echo '<a href="skype:'.suevafree_setting('suevafree_footer_skype_button').'" title="Skype" class="social skype"> Skype  </a>'; 
+	if (suevaxuan_setting('suevaxuan_footer_skype_button')): 
+    	echo '<a href="skype:'.suevaxuan_setting('suevaxuan_footer_skype_button').'" title="Skype" class="social skype"> Skype  </a>'; 
 	endif; 
 
-	if (suevafree_setting('suevafree_footer_admin_button')): 
-    	echo '<a href="'.suevafree_setting('suevafree_footer_admin_button').'" title="Admin" class="social admin" data-no-instant> Admin  </a>'; 
+	if (suevaxuan_setting('suevaxuan_footer_admin_button')): 
+    	echo '<a href="'.suevaxuan_setting('suevaxuan_footer_admin_button').'" title="Admin" class="social admin" data-no-instant> Admin  </a>'; 
 	endif; 
 
-	if (suevafree_setting('suevafree_footer_email_button')): 
-    	echo '<a href="mailto:'.suevafree_setting('suevafree_footer_email_button').'" title="Email" class="social email"> Email  </a>'; 
+	if (suevaxuan_setting('suevaxuan_footer_email_button')): 
+    	echo '<a href="mailto:'.suevaxuan_setting('suevaxuan_footer_email_button').'" title="Email" class="social email"> Email  </a>'; 
 	endif; 
 
 	$socials = array ("QQ","twitter","flickr","google","linkedin","pinterest","tumblr","youtube","vimeo");
 	
 	foreach ( $socials as $social ) {
 		
-		if (suevafree_setting('suevafree_footer_'.$social.'_button')): 
+		if (suevaxuan_setting('suevaxuan_footer_'.$social.'_button')): 
 		
-			echo '<a href="'.esc_url(suevafree_setting('suevafree_footer_'.$social.'_button')).'" target="_blank" title="'.$social.'" class="social '.$social.'"> '.$social.'  </a> ';
+			echo '<a href="'.esc_url(suevaxuan_setting('suevaxuan_footer_'.$social.'_button')).'" target="_blank" title="'.$social.'" class="social '.$social.'"> '.$social.'  </a> ';
 				
 		endif;
 
 	}
 
-	if (suevafree_setting('suevafree_footer_rss_button') == "on"): 
+	if (suevaxuan_setting('suevaxuan_footer_rss_button') == "on"): 
     	echo '<a href="'; bloginfo('rss2_url'); echo '" title="Rss" class="social rss"> Rss  </a> ';
 	endif; 
 

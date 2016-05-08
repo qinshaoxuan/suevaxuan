@@ -2,7 +2,7 @@
 
 require_once get_template_directory() . '/core/widgets/search_widget.php';
 
-function suevafree_widgets_init() {
+function suevaxuan_widgets_init() {
 
 	register_sidebar(array(
 	
@@ -54,7 +54,7 @@ function suevafree_widgets_init() {
 
 }
 
-add_action( 'widgets_init', 'suevafree_widgets_init' );
+add_action( 'widgets_init', 'suevaxuan_widgets_init' );
 
 
 

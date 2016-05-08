@@ -6,7 +6,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-<?php if (suevafree_setting('suevafree_custom_favicon')) : ?> <link rel="shortcut icon" href="<?php echo suevafree_setting('suevafree_custom_favicon'); ?>"/> <?php endif; ?>
+<?php if (suevaxuan_setting('suevaxuan_custom_favicon')) : ?> <link rel="shortcut icon" href="<?php echo suevaxuan_setting('suevaxuan_custom_favicon'); ?>"/> <?php endif; ?>
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen" />
 
@@ -43,8 +43,8 @@ var _hmt = _hmt || [];
                         
                 	<?php 
 					
-                    	if ( suevafree_setting('suevafree_custom_logo')) :
-                        	echo "<img src='".suevafree_setting('suevafree_custom_logo')."' alt='logo'>"; 
+                    	if ( suevaxuan_setting('suevaxuan_custom_logo')) :
+                        	echo "<img src='".suevaxuan_setting('suevaxuan_custom_logo')."' alt='logo'>"; 
                         else: 
                             bloginfo('name');
 							echo "<span>".get_bloginfo('description')."</span>";

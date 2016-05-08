@@ -1,6 +1,6 @@
 <?php
 
-$suevafree_article = array (
+$suevaxuan_article = array (
 
 array( "name" => __( "General Settings","wip"),
 	   "type" => "title",
@@ -9,7 +9,7 @@ array( "name" => __( "General Settings","wip"),
 	  
 array( "name" => __( "Template","wip"),
 	   "desc" => __( "Select a template for this page","wip"),
-	   "id" => "suevafree_template",
+	   "id" => "suevaxuan_template",
 	   "type" => "select",
 	   "options" => array(
 		   "full" => __( "Full Width","wip"),

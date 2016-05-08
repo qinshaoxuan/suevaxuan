@@ -8,14 +8,14 @@ if ( have_comments() ) :
 
 <section id="comments">
 	<ul class="commentlist">
-		<?php wp_list_comments('type=comment&callback=suevafree_comment'); ?>
+		<?php wp_list_comments('type=comment&callback=suevaxuan_comment'); ?>
 	</ul>
 </section>
 
 <?php endif; ?>
 
 <?php 
-function suevafree_comment ($comment, $args, $depth) {
+function suevaxuan_comment ($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
  

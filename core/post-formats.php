@@ -9,7 +9,7 @@
  * It is also available at this URL: http://www.gnu.org/licenses/gpl-3.0.txt
  */
 
-function suevafree_postformat_function() {
+function suevaxuan_postformat_function() {
 
 	if ( get_post_type( get_the_ID()) == "page" ) {
 		$postformats = "page";
@@ -27,7 +27,7 @@ function suevafree_postformat_function() {
 
 }
 
-add_action( 'suevafree_postformat','suevafree_postformat_function', 10, 2 );
+add_action( 'suevaxuan_postformat','suevaxuan_postformat_function', 10, 2 );
 
 
 

@@ -1,6 +1,6 @@
 <?php 
 	
-	global $suevafree_wip_setting;
+	global $suevaxuan_wip_setting;
     
 	if ( has_post_thumbnail() ) : ?>
         
@@ -24,7 +24,7 @@
        
             <span class="entry-date"><i class="icon-time" ></i><?php echo get_the_date(); ?></span>
             
-			<?php if (suevafree_setting('suevafree_view_comments') == "on" ): ?>
+			<?php if (suevaxuan_setting('suevaxuan_view_comments') == "on" ): ?>
             
                 <span class="entry-comments">
                     
@@ -37,7 +37,7 @@
             
             <span class="entry-standard"><i class="icon-file-text-alt"></i><?php _e( "Aside","wip") ?></span>
         	
-			<?php if (suevafree_setting('suevafree_view_author') == "on" ) : ?>
+			<?php if (suevaxuan_setting('suevaxuan_view_author') == "on" ) : ?>
 
                 <span class="entry-author"><i class="icon-user"></i><?php the_author(); ?></span>
 
@@ -51,9 +51,9 @@
 	
 	if ((is_home()) || (is_category()) || (is_page()) || (is_search()) || (is_tag()) || (is_archive()) ) {
 		
-		if ( (!suevafree_setting('suevafree_view_readmore')) || (suevafree_setting('suevafree_view_readmore') == "on" ) ) {
-			suevafree_excerpt(); 
-		} else if (suevafree_setting('suevafree_view_readmore') == "off" ) {
+		if ( (!suevaxuan_setting('suevaxuan_view_readmore')) || (suevaxuan_setting('suevaxuan_view_readmore') == "on" ) ) {
+			suevaxuan_excerpt(); 
+		} else if (suevaxuan_setting('suevaxuan_view_readmore') == "off" ) {
 			the_content(); 
 		}
 
@@ -69,10 +69,10 @@
 		
 		the_tags( '<footer class="line"><div class="entry-info"><span class="tags">Tags: ', ', ', '</span></div></footer>' );
 		
-		if (suevafree_setting('suevafree_view_comments') == "on" ) :
+		if (suevaxuan_setting('suevaxuan_view_comments') == "on" ) :
 			comments_template(); ?>
-			<?php if(suevafree_setting('suevafree_view_comments_declaraction') == "on" ) :
-                echo stripslashes(suevafree_setting('suevafree_comments_declaraction_text')); ?>
+			<?php if(suevaxuan_setting('suevaxuan_view_comments_declaraction') == "on" ) :
+                echo stripslashes(suevaxuan_setting('suevaxuan_comments_declaraction_text')); ?>
             <?php endif; ?>
 
 		<?php endif; 

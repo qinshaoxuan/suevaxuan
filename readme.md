@@ -1,5 +1,5 @@
 # suevaxuan
-wordpress主题suevafree 修改版
+wordpress主题suevaxuan 修改版
 
 ##demo
 [xuan's blog](http://www.qinshaoxuan.com)

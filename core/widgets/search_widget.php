@@ -4,11 +4,11 @@
 /* START SEARCH WIDGET
 /*-----------------------------------------------------------------------------------*/ 
    
-class suevafree_search_widget extends WP_Widget
+class suevaxuan_search_widget extends WP_Widget
 {
 	public function __construct() 
     {
-		parent::WP_Widget( "suevafree_search_widget", "Wip Search Widget", array("description" => "Wip Search Widget"));
+		parent::WP_Widget( "suevaxuan_search_widget", "Wip Search Widget", array("description" => "Wip Search Widget"));
 	}
 		public function form( $instance )
 	{
@@ -65,11 +65,11 @@ class suevafree_search_widget extends WP_Widget
 		echo $after_widget;
 	}
 	}
-function add_suevafree_search_widget()
+function add_suevaxuan_search_widget()
 {
-	register_widget( 'suevafree_search_widget' );
+	register_widget( 'suevaxuan_search_widget' );
 }
-add_action( 'widgets_init', 'add_suevafree_search_widget' );
+add_action( 'widgets_init', 'add_suevaxuan_search_widget' );
 
 /*-----------------------------------------------------------------------------------*/
 /* END SEARCH WIDGET
