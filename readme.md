@@ -1,6 +1,6 @@
 # suevaxuan
 wordpress主题suevaxuan
-> 此主题根据`sueva`主题`suevafree`版本修改而来
+> 此主题根据`sueva`主题`suevafree v1.2.7.8`版本修改而来
 
 ##demo
 [xuan's blog](http://www.qinshaoxuan.com)
