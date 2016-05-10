@@ -57,9 +57,7 @@ Template Name: archives
                             $previous_year = $year; $previous_month = $month;
                         ?>
                             <li>
-                                 <div class="archive-date"><?php the_time('Y-m-d'); ?></div>
-                               <a href="<?php the_permalink(); ?>"><div class="atitle"><?php the_title(); ?></div></a>
-                 
+                                <a href="<?php the_permalink(); ?>"><div class="archive-date"><?php the_time('Y-m-d'); ?></div><div class="atitle"><?php the_title(); ?></div></a>
                             </li>
                         <?php endforeach; ?>
                         </ul>
