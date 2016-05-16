@@ -129,8 +129,8 @@
 	
 	if ( suevaxuan_setting('suevaxuan_link_color_hover') ):
 
-		echo '.contact-form input[type=submit]:hover, .button:hover, #sidebar .tagcloud a:hover, #footer .tagcloud a:hover, .contact-form input[type=submit]:hover { background: '.suevaxuan_setting('suevaxuan_link_color_hover').'; } ';
-		echo 'a:hover, #footer a:hover, #footer ul.widget-category li:hover, #footer ul.widget-category li a:hover, .pin-article h1.title a:hover, #logo a:hover { color: '.suevaxuan_setting('suevaxuan_link_color_hover').'; } ';
+		echo '.contact-form input[type=submit]:hover, .button:hover, #sidebar .tagcloud a:hover, #footer .tagcloud a:hover, .contact-form input[type=submit]:hover, .archives li a:hover .archive-date:after, .m-title:hover:after { background: '.suevaxuan_setting('suevaxuan_link_color_hover').'; } ';
+		echo 'a:hover, #footer a:hover, #footer ul.widget-category li:hover, #footer ul.widget-category li a:hover, .pin-article h1.title a:hover, #logo a:hover, .archives li a:hover .archive-date { color: '.suevaxuan_setting('suevaxuan_link_color_hover').'; } ';
 	
 	endif;	
 
