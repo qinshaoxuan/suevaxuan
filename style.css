@@ -32,7 +32,7 @@ body.custombody {
 	z-index: 9999;
 	width:30px;
 	_position:absolute;
-	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight/2-this.offsetHeight/2))
+	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight/2-this.offsetHeight/2));
 }
 #sticky-nav a:hover { 
   	right:56px;
@@ -67,7 +67,7 @@ body.custombody {
 	font-family:"Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 #sticky-nav a:hover {
-	overflow:visible
+	overflow:visible;
 }
 #sticky-nav a:hover span {
 	-webkit-transform:translate(0,0);
@@ -77,7 +77,7 @@ body.custombody {
 	transform:translate(0,0);
 	opacity:1;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity =100)";
-	filter:alpha(opacity=100)
+	filter:alpha(opacity=100);
 }
 #sticky-nav span:before,
 #sticky-nav span:after {
@@ -95,6 +95,14 @@ body.custombody {
 	background-position: -3px -3px;
 	background-color: #3399FF;
 	margin-bottom: 5px;
+}
+#sticky-nav a.gotop-mobile {
+	background-position: -3px -3px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.gotop-mobile {
+	right:0;
 }
 #sticky-nav a.gobtm {
 	background-position: -4px -186px;
@@ -121,6 +129,20 @@ body.custombody {
 	background-position: -3px -40px;
 	background-color: #3399FF;
 	margin-bottom: 5px;
+}
+#sticky-nav a.indexbtn {
+	text-align:left;
+	background-position: -5px -76px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.indexbtn-mobile {
+	background-position: -5px -76px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.indexbtn-mobile {
+	right:0;
 }
 
 /*字体*/

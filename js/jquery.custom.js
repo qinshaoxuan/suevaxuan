@@ -4,7 +4,17 @@ jQuery(document).ready(function(){
 		
 jQuery(document).ready(function($){
 
-jQuery('a.social').tipsy({fade:true, gravity:'s'});
+
+if(jQuery('.gobtm').length>0){
+	jQuery('a.social').tipsy({fade:true, gravity:'s'});
+}
+
+if(jQuery('.indexbtn').length>0){
+	jQuery('.content-index-title').tipsy({fade:true, gravity:'e', fallback: "点击隐藏"});
+}
+jQuery('.content-index-title').click(function(){
+	jQuery('.content-index').slideToggle('fast');
+});
 
 jQuery('nav#mainmenu li').hover(
 		function () {
@@ -28,10 +38,12 @@ jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({
 			social_tools: false
 });
 
-});  
-
-
 jQuery('.archives .m-title').click(function() {
     jQuery(this).next().slideToggle('fast');
     return false;
-});        
+}); 
+
+});  
+
+
+       

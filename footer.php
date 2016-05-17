@@ -37,17 +37,52 @@
 
 <?php wp_footer() ?>   
 
+<!-- gotop -->
 
-<div id="sticky-nav"><a class="gotop" onclick="window.scrollTo(0,0);return false;" href="#top">
-<span>返回顶部</span></a> 
-<a class="about" href="http://www.qinshaoxuan.com/about" target="_blank">
-<span>&nbsp;关于我&nbsp;&nbsp;</span></a> 
-<?php if ( is_singular() && comments_open() ) { ?>
-<a class="gocom" onclick="document.getElementById('comment').focus();return false;" href="#respond">
-<span>发表评论</span></a>
+<?php if( wp_is_mobile() ){  ?>
+
+    <div id="sticky-nav"><a class="gotop-mobile" onclick="window.scrollTo(0,0);return false;" href="#top"></a> 
+    <?php if ( is_singular() && get_post_meta($post->ID, '_content_index_enable', true) == '1') { ?>
+
+        <a class="indexbtn-mobile" href="#index" onclick="jQuery('.content-index').slideToggle('fast');"><span>文章目录</span></a> 
+        <script>
+            jQuery('.indexbtn-mobile').click();
+        </script>
+
+    <?php } ?>
+
+    </div>
+
+<?php }else{ ?>
+
+    <div id="sticky-nav"><a class="gotop" onclick="window.scrollTo(0,0);return false;" href="#top"><span>返回顶部</span></a> 
+
+    <?php if ( !is_singular() ) { ?>
+
+        <a class="about" href="http://www.qinshaoxuan.com/about" target="_blank"><span>&nbsp;关于我&nbsp;&nbsp;</span></a> 
+
+    <?php } ?>
+
+    <?php if ( is_singular() && get_post_meta($post->ID, '_content_index_enable', true) == '1') { ?>
+
+        <a class="indexbtn" href="#index" onclick="jQuery('.content-index').slideToggle('fast');"><span>文章目录</span></a> 
+        <script>
+            jQuery('.indexbtn').click();
+        </script>
+
+    <?php } ?>
+
+    <?php if ( is_singular() && comments_open() ) { ?>
+
+        <a class="gocom" onclick="document.getElementById('comment').focus();return false;" href="#respond"><span>发表评论</span></a>
+
+    <?php } ?>
+
+    <a class="gobtm" onclick="window.scrollTo(0,document.body.scrollHeight);return false;" href="#colophon"><span>前往底部</span></a></div>
+
 <?php } ?>
-<a class="gobtm" onclick="window.scrollTo(0,document.body.scrollHeight);return false;" href="#colophon">
-<span>前往底部</span></a></div>
+
+<!-- gotop end -->
 
 </body>
 
