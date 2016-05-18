@@ -104,4 +104,18 @@ function my_remove_recent_comments_style() {
 global $wp_widget_factory;   
 remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));   
 }
+
+/**
+*	标签排序
+*/
+add_filter( 'widget_tag_cloud_args', 'theme_tag_cloud_args' );
+function theme_tag_cloud_args( $args ){
+    $newargs = array(
+        'number'      => 99,     //显示个数
+        'orderby'     => 'count',//排序字段，可以是name或count
+        'order'       => 'DESC', //升序或降序，ASC或DESC
+    );
+    $return = array_merge( $args, $newargs);
+    return $return;
+}
 ?>

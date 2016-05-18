@@ -121,7 +121,7 @@
 		echo 'nav#mainmenu ul ul { border-top-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
 		echo 'nav#mainmenu ul ul:before { border-bottom-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
 		echo 'nav#mainmenu ul ul li ul { border-top-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
-		echo 'nav#mainmenu ul ul li a:hover, nav#mainmenu ul ul li.current-menu-item > a, nav#mainmenu ul ul li.current_page_item > a, nav#mainmenu ul ul li.current_page_ancestor > a, nav#mainmenu ul ul li.current_page_ancestor > a, nav#mainmenu ul ul li.current-menu-ancestor > a, #sidebar .tagcloud a, #footer .tagcloud a  { background: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
+		echo 'nav#mainmenu ul ul li a:hover, nav#mainmenu ul ul li.current-menu-item > a, nav#mainmenu ul ul li.current_page_item > a, nav#mainmenu ul ul li.current_page_ancestor > a, nav#mainmenu ul ul li.current_page_ancestor > a, nav#mainmenu ul ul li.current-menu-ancestor > a  { background: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
 		echo 'nav#mainmenu ul ul li a:hover, nav#mainmenu ul ul li.current-menu-item > a, nav#mainmenu ul ul li.current_page_item > a, nav#mainmenu ul ul li.current_page_ancestor > a, nav#mainmenu ul ul li.current_page_ancestor > a, nav#mainmenu ul ul li.current-menu-ancestor > a  { border-top-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
 		
 		
@@ -129,7 +129,7 @@
 	
 	if ( suevaxuan_setting('suevaxuan_link_color_hover') ):
 
-		echo '.contact-form input[type=submit]:hover, .button:hover, #sidebar .tagcloud a:hover, #footer .tagcloud a:hover, .contact-form input[type=submit]:hover, .archives li a:hover .archive-date:after, .m-title:hover:after { background: '.suevaxuan_setting('suevaxuan_link_color_hover').'; } ';
+		echo '.contact-form input[type=submit]:hover, .button:hover, .contact-form input[type=submit]:hover, .archives li a:hover .archive-date:after, .m-title:hover:after { background: '.suevaxuan_setting('suevaxuan_link_color_hover').'; } ';
 		echo 'a:hover, #footer a:hover, #footer ul.widget-category li:hover, #footer ul.widget-category li a:hover, .pin-article h1.title a:hover, #logo a:hover, .archives li a:hover .archive-date { color: '.suevaxuan_setting('suevaxuan_link_color_hover').'; } ';
 	
 	endif;	

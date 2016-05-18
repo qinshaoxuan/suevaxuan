@@ -1500,26 +1500,36 @@ ul#twitter_update_list li {
 #sidebar .tagcloud a, 
 #footer .tagcloud a { 
 	display: inline-block; 
-	padding: 4px 8px; 
 	text-align: center; 
 	font-family: 'Abel',Consolas,Helvetica, Tahoma, Arial,  "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 	font-size:12px !important; 
-	color:#ddd; 
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-o-transition: all .3s ease;
-	background:#ff6644;
-	color:#fff;
 	border:none;
-	margin:0 0 4px 0;
+
+	background: #F1F6FC;
+    color: #0090FF;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    padding: 2px 10px;
+    font-weight: 100;
+    
+    box-shadow: 0 1px 3px rgba(153, 153, 153, 0.54);
+    -moz-box-shadow: 0 1px 3px rgba(153, 153, 153, 0.54);
+    -webkit-box-shadow: 0 1px 3px rgba(153, 153, 153, 0.54);
+    margin: 5px 3px;
+    line-height: 20px;
 }
 #sidebar .tagcloud a:hover, 
 #footer .tagcloud a:hover { 
 	color: #fff; 
-	background: #d14a2b;
+	background: rgba(0, 144, 255, 0.61)!important;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
 }
 #sidebar .tagcloud a { 
-	font-size:14px !important; 
+	font-size:12px !important; 
 }
 
 /* END TAG CLOUD */
@@ -1837,3 +1847,46 @@ a.email  {
 .m-title:after{position:absolute;left:96px;background:#ccc;height:12px;width:12px;border-radius:6px;top:15px;content:"";-webkit-transition: all .3s ease;}
 
 /* End Archive */
+
+/* img */
+p img{height: auto;}
+/* End img */
+
+/* Friend-Link */
+
+#sidebar .friendlink a, 
+#footer .friendlink a { 
+	display: inline-block; 
+	text-align: center; 
+	font-family: Consolas,Helvetica, Tahoma, Arial,  "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+	font-size:12px !important; 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	border:none;
+
+	background: #F1F6FC;
+    color: #0090FF;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    padding: 2px 10px;
+    font-weight: 100;
+    
+    box-shadow: 0 1px 3px rgba(153, 153, 153, 0.54);
+    -moz-box-shadow: 0 1px 3px rgba(153, 153, 153, 0.54);
+    -webkit-box-shadow: 0 1px 3px rgba(153, 153, 153, 0.54);
+    margin: 5px 3px;
+    line-height: 20px;
+}
+#sidebar .friendlink a:hover, 
+#footer .friendlink a:hover { 
+	color: #fff; 
+	background: rgba(0, 144, 255, 0.61)!important;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+}
+#sidebar .friendlink a { 
+	font-size:12px !important; 
+}
+
+/* End Friend-Link */
