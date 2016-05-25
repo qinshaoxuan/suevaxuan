@@ -30,7 +30,7 @@
 		
 		if (suevaxuan_setting('suevaxuan_view_comments') == "on" ) :
 			comments_template(); ?>
-			<?php if(suevaxuan_setting('suevaxuan_view_comments_declaraction') == "on" && have_comments() ) :
+			<?php if(suevaxuan_setting('suevaxuan_view_comments_declaraction') == "on" && comments_open() ) :
                 echo stripslashes(suevaxuan_setting('suevaxuan_comments_declaraction_text')); ?>
             <?php endif; ?>
 
