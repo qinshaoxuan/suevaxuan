@@ -10,6 +10,11 @@ wordpress主题suevaxuan
 
 原版地址：[sueva](http://www.themeinprogress.com/sueva/)
 
+### Ver 1.1.1 (2016-05-25)
+1. 添加对目录插件Content Index for Wordpress的支持，并修改了CSS样式
+2. 修改了Tag与友链的CSS样式，使用友链样式请添加`class="friendlink"`
+3. 修复部分BUG
+
 ### Ver 1.1.0 (2016-05-05)
 1. 增加时间轴归档页面模板，可在页面属性中选择archives模板使用，[demo](http://www.qinshaoxuan.com/archive)
 2. 增加评论声明功能
