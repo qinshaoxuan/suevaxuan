@@ -31,3 +31,4 @@ wordpress主题suevaxuan
 * 数学公式：LaTeX for WordPress
 * 评论：多说
 * 音乐：WP-Player
+* 目录：Content Index for Wordpress
