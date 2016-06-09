@@ -78,6 +78,14 @@ jQuery('.gocom').click(function() {
     return false;
 });
 
+$('.cat-item a').hover(function(){
+        $(this).stop().animate({margin:"0 0 0 10px"},0);
+    },
+    function(){
+        $(this).stop().animate({margin:"0 0 0 0px"},0);
+    }
+);
+
 });  
 
 
