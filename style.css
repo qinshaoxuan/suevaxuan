@@ -558,16 +558,15 @@ nav#mainmenu ul li {
 nav#mainmenu ul li a   { 
 	text-decoration:none; 
 	display:block; 
-	font-family:Consolas,Helvetica, Tahoma, Arial,  "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
-	font-size:14px; 
+	font-family:'Allura',Consolas,Helvetica, Tahoma, Arial,  "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+	font-size:35px; 
 	z-index:1; 
 	margin:15px 15px 0 15px; 
 	color:#BEC4C7; 
 	font-size:19px; 
 	-webkit-transition: all .3s linear; 
 	-moz-transition: all .3s linear; 
-	-o-transition: all .3s linear; 
-	text-transform:uppercase;
+	-o-transition: all .3s linear;
 }
 nav#mainmenu ul li a:hover,
 nav#mainmenu li:hover > a,
