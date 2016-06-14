@@ -10,6 +10,11 @@ wordpress主题suevaxuan
 
 原版地址：[sueva](http://www.themeinprogress.com/sueva/)
 
+### Ver 1.2.0 (2016-06-13)
+1. 增加地图页面模板，可在页面属性中选择map模板使用，[demo](http://www.qinshaoxuan.com/journey)<br />地图采用[ECharts 3](http://echarts.baidu.com/index.html)插件，地图配置可修改`/js/map.js`文件，配置项参考[ECharts 3 配置项手册](http://echarts.baidu.com/option.html)
+2. 增加[prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/)图片特效插件，在图片链接中插入`data-rel="prettyPhoto"`使用，详细使用方法参考[prettyPhoto documentation](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation)
+3. 更新部分CSS样式
+
 ### Ver 1.1.1 (2016-05-25)
 1. 添加对目录插件Content Index for Wordpress的支持，并修改了CSS样式
 2. 修改了Tag与友链的CSS样式，使用友链样式请添加`class="friendlink"`
