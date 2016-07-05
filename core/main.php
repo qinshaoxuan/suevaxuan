@@ -396,10 +396,10 @@ function suevaxuan_socials() {
 	endif; 
 
 	if (suevaxuan_setting('suevaxuan_footer_email_button')): 
-    	echo '<a href="mailto:'.suevaxuan_setting('suevaxuan_footer_email_button').'" title="Email" class="social email"> Email  </a>'; 
+    	echo '<a href="'.suevaxuan_setting('suevaxuan_footer_email_button').'" target="_blank" title="Email" class="social email"> Email  </a>'; 
 	endif; 
 
-	$socials = array ("QQ","twitter","flickr","google","linkedin","pinterest","tumblr","youtube","vimeo");
+	$socials = array ("QQ","twitter","flickr","GitHub","google","linkedin","pinterest","tumblr","youtube","vimeo");
 	
 	foreach ( $socials as $social ) {
 		

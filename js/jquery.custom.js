@@ -78,11 +78,11 @@ jQuery('.gocom').click(function() {
     return false;
 });
 
-$('.cat-item a').hover(function(){
-        $(this).stop().animate({margin:"0 0 0 10px"},0);
+$('.cat-item').hover(function(){
+        $(this).children('a').stop(true, true).animate({margin:"0 0 0 10px"},0);
     },
     function(){
-        $(this).stop().animate({margin:"0 0 0 0px"},0);
+        $(this).children('a').stop(true, true).animate({margin:"0 0 0 0px"},0);
     }
 );
 

@@ -6,7 +6,7 @@ Source: ThemeinProgress.
 Source URI: https://themeinprogress.com
 Author: Xuan
 Author URI: http://www.qinshaoxuan.com/
-Version: 1.1.0
+Version: 1.2.0
 Tags: gray, light, black, orange, blue, pink, purple, two-columns, right-sidebar, left-sidebar, custom-background, custom-menu, threaded-comments, full-width-template, theme-options,responsive-layout, translation-ready, one-column, photoblogging
 Text Domain: SuevaXuan
 License: GNU General Public License v3 or later
@@ -1565,6 +1565,9 @@ ul#twitter_update_list li {
 
 a.QQ { 
 	background:url('images/icons/social/qq.png') no-repeat;
+}
+a.GitHub { 
+	background:url('images/icons/social/github.png') no-repeat;
 }
 a.flickr { 
 	background:url('images/icons/social/flickr.png') no-repeat;

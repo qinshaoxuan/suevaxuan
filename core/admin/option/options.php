@@ -186,6 +186,12 @@ array( "type" => "begintab",
 	       "id" => $shortname."_footer_flickr_button",
 	       "type" => "text",
 	       "std" => ""),
+
+	array( "name" => __( "GitHub Url","wip"),
+	       "desc" => __( "输入 GitHub Url (隐藏图标则为空)","wip"),
+	       "id" => $shortname."_footer_GitHub_button",
+	       "type" => "text",
+	       "std" => ""),
 	
 	array( "name" => __( "Google Url","wip"),
 	       "desc" => __( "输入 Google Url (隐藏图标则为空)","wip"),
