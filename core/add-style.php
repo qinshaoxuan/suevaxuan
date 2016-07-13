@@ -116,8 +116,8 @@
 	
 		echo '.pin-article .link:hover, .contact-form input[type=submit], .pin-article .quote:hover, .pin-article .link a:hover, .button, .wp-pagenavi a:hover , .wp-pagenavi span.current { background-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
 		echo 'a, nav#mainmenu ul li a:hover, nav#mainmenu li:hover > a, nav#mainmenu ul li.current-menu-item > a, nav#mainmenu ul li.current_page_item > a, nav#mainmenu ul li.current-menu-parent > a, nav#mainmenu ul li.current_page_ancestor > a, nav#mainmenu ul li.current-menu-ancestor > a { color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
-		echo '::-moz-selection { background-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
-		echo '::selection { background-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
+		echo '::-moz-selection { background-color: '.suevaxuan_setting('suevaxuan_selection_color').'; } ';
+		echo '::selection { background-color: '.suevaxuan_setting('suevaxuan_selection_color').'; } ';
 		echo 'nav#mainmenu ul ul { border-top-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
 		echo 'nav#mainmenu ul ul:before { border-bottom-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';
 		echo 'nav#mainmenu ul ul li ul { border-top-color: '.suevaxuan_setting('suevaxuan_link_color').'; } ';

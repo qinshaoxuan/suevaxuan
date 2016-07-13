@@ -447,6 +447,12 @@ array( "type" => "begintab",
 	       "type" => "text",
 	       "std" => "#d14a2b"),
 
+	array( "name" => __( "selection color","wip"),
+	       "desc" => __( "Select a color for selection","wip"),
+	       "id" => $shortname."_selection_color",
+	       "type" => "text",
+	       "std" => "#ff6644"),
+
 	array( "name" => __( "Border color","wip"),
 	       "desc" => __( "Select a color for borders","wip"),
 	       "id" => $shortname."_border_color",

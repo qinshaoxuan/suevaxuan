@@ -275,6 +275,7 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
     "suevaxuan_copyright_font_color" => "#ffffff", 
     "suevaxuan_link_color" => "#ff6644", 
     "suevaxuan_link_color_hover" => "#d14a2b", 
+    "suevaxuan_selection_color" => "#ff6644",
     "suevaxuan_border_color" => "#ff6644", 
 
 	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
