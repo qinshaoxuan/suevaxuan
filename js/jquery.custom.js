@@ -88,7 +88,7 @@ jQuery(document).ready(function($) {
 
     $('#content-index-contents a').click(function(){
         var str = $(this).children().html();
-        var top = $('#'+ str).offset().top;
+        var top = $('[id="'+ str + '"]').offset().top;
         var urlstr = window.location.protocol + '//' +window.location.host + window.location.pathname + '#' + str;
         $('body,html').stop().animate({
                 scrollTop: top
