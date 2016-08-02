@@ -21,130 +21,6 @@ body.custombody {
 	background-size: cover;
 }
 
-/*返回顶部*/
-#sticky-nav {
-	-webkit-border-radius:3px 0 0 3px;
-	-moz-border-radius:3px 0 0 3px;
-	border-radius:3px 0 0 3px;
-	position:fixed;
-	right:0px;
-	bottom: 5%;
-	z-index: 9999;
-	width:30px;
-	_position:absolute;
-	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight/2-this.offsetHeight/2));
-}
-#sticky-nav a:hover { 
-  	right:56px;
-}
-#sticky-nav a {
-	background:url(images/sideTools.png) no-repeat;
-	width:30px;
-	height:30px;
-	display:block;
-	-webkit-border-top-left-radius:3px;
-	-moz-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:3px;
-	-moz-border-bottom-left-radius:3px;
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-	position:relative;
-	text-decoration:none;
-}
-#sticky-nav span {
-	background:#333;
-	-webkit-border-top-right-radius:3px;
-	-moz-border-top-right-radius:3px;
-	-webkit-border-bottom-right-radius:3px;
-	-moz-border-bottom-right-radius:3px;
-	border-top-right-radius:3px;
-	border-bottom-right-radius:3px;
-	font-size:12px;
-	position:absolute;
-	right: -56px;
-	padding:5px 4px;
-	color:#fff;
-	font-family:"Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
-}
-#sticky-nav a:hover {
-	overflow:visible;
-}
-#sticky-nav a:hover span {
-	-webkit-transform:translate(0,0);
-	-moz-transform:translate(0,0);
-	-ms-transform:translate(0,0);
-	-o-transform:translate(0,0);
-	transform:translate(0,0);
-	opacity:1;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity =100)";
-	filter:alpha(opacity=100);
-}
-#sticky-nav span:before,
-#sticky-nav span:after {
-	content:'';
-	display:block;
-	width:0;
-	height:0;
- 
-}
-#sticky-nav span:before {
-	border-left-color:#ccc;
-	right:-8px
-}
-#sticky-nav a.gotop {
-	background-position: -3px -3px;
-	background-color: #3399FF;
-	margin-bottom: 5px;
-}
-#sticky-nav a.gotop-mobile {
-	background-position: -3px -3px;
-	background-color: #3399FF;
-	margin-bottom: 5px;
-}
-#sticky-nav a.gotop-mobile {
-	right:0;
-}
-#sticky-nav a.gobtm {
-	background-position: -4px -186px;
-	background-color: #3399FF;
-}
-#sticky-nav a.gocom {
-	background-position: -4px -150px;
-	background-color: #3399FF;
-	margin-bottom: 5px;
-}
-#sticky-nav a.bianlan {
-	background-position: -3px -77px;
-	background-color: #3399FF;
-	margin-bottom: 5px;
-}
-.close-sidebar {
-  	cursor:pointer;
-}
-.show-sidebar {
-  	cursor:pointer;
-}
-#sticky-nav a.about {
-	text-align:left;
-	background-position: -3px -40px;
-	background-color: #3399FF;
-	margin-bottom: 5px;
-}
-#sticky-nav a.indexbtn {
-	text-align:left;
-	background-position: -5px -76px;
-	background-color: #3399FF;
-	margin-bottom: 5px;
-}
-#sticky-nav a.indexbtn-mobile {
-	background-position: -5px -76px;
-	background-color: #3399FF;
-	margin-bottom: 5px;
-}
-#sticky-nav a.indexbtn-mobile {
-	right:0;
-}
-
 /*字体*/
 
 @font-face {
@@ -1901,3 +1777,146 @@ p img{height: auto;}
 ::-webkit-scrollbar-thumb:hover{ background:rgba(0, 144, 255, 0.61) }
 
 /* End scrollbar */
+
+/* category item */
+
+.cat-item {
+	padding: 0;
+	transition: padding ease .3s;
+}
+
+.cat-item:hover {
+	padding: 0 0 0 10px;
+}
+
+/* End category item */
+
+
+/* gotop */
+
+#sticky-nav {
+	-webkit-border-radius:3px 0 0 3px;
+	-moz-border-radius:3px 0 0 3px;
+	border-radius:3px 0 0 3px;
+	position:fixed;
+	right:0;
+	bottom: 5%;
+	z-index: 9999;
+	width:30px;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight/2-this.offsetHeight/2));
+}
+#sticky-nav a:hover { 
+  	right:56px;
+}
+#sticky-nav a {
+	background:url(images/sideTools.png) no-repeat;
+	width:30px;
+	height:30px;
+	display:block;
+	-webkit-border-top-left-radius:3px;
+	-moz-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-bottom-left-radius:3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	position:relative;
+	right:0;
+	text-decoration:none;
+	transition: right ease .2s;
+}
+#sticky-nav span {
+	background:#333;
+	-webkit-border-top-right-radius:3px;
+	-moz-border-top-right-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	-moz-border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	font-size:12px;
+	position:absolute;
+	right: -56px;
+	padding:5px 4px;
+	color:#fff;
+	font-family:"Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+#sticky-nav a:hover {
+	overflow:visible;
+}
+#sticky-nav a:hover span {
+	-webkit-transform:translate(0,0);
+	-moz-transform:translate(0,0);
+	-ms-transform:translate(0,0);
+	-o-transform:translate(0,0);
+	transform:translate(0,0);
+	opacity:1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity =100)";
+	filter:alpha(opacity=100);
+}
+#sticky-nav span:before,
+#sticky-nav span:after {
+	content:'';
+	display:block;
+	width:0;
+	height:0;
+ 
+}
+#sticky-nav span:before {
+	border-left-color:#ccc;
+	right:-8px
+}
+#sticky-nav a.gotop {
+	background-position: -3px -3px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.gotop-mobile {
+	background-position: -3px -3px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.gotop-mobile {
+	right:0;
+}
+#sticky-nav a.gobtm {
+	background-position: -4px -186px;
+	background-color: #3399FF;
+}
+#sticky-nav a.gocom {
+	background-position: -4px -150px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.bianlan {
+	background-position: -3px -77px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+.close-sidebar {
+  	cursor:pointer;
+}
+.show-sidebar {
+  	cursor:pointer;
+}
+#sticky-nav a.about {
+	text-align:left;
+	background-position: -3px -40px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.indexbtn {
+	text-align:left;
+	background-position: -5px -76px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.indexbtn-mobile {
+	background-position: -5px -76px;
+	background-color: #3399FF;
+	margin-bottom: 5px;
+}
+#sticky-nav a.indexbtn-mobile {
+	right:0;
+}
+
+/* End gotop */

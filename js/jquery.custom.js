@@ -78,14 +78,6 @@ jQuery(document).ready(function($) {
         return false;
     });
 
-    $('.cat-item').hover(function() {
-            $(this).children('a').stop(true, true).animate({ margin: "0 0 0 10px" }, 0);
-        },
-        function() {
-            $(this).children('a').stop(true, true).animate({ margin: "0 0 0 0px" }, 0);
-        }
-    );
-
     var str = "<!--\n\n\
                               :rSGH#@@@@@@@@@H9hi.  .     .,,::::::;;iiiiiirii;;,          .;1SX#@@@@@@@@@@A3i.              \n\
                               1XHM@#HHHBMMBM##BH&5,.,...,rh398G8GGXX&HHHAXAHHH&XSs;,,,....:1&BBM#MBHBBMBBMM#H9s              \n\
