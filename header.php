@@ -19,17 +19,6 @@
 
 <?php wp_head(); ?>
 
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?401accc54599caeba12f5d5e55a6034f";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
 </head>
 <body <?php body_class(); ?>>
 
