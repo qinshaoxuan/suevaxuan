@@ -864,7 +864,7 @@ form#searchform #searchsubmit {
 
 article blockquote { 
 	border-left: 4px solid #ff6644; 
-	padding:0 35px; 
+	padding:5px 35px; 
 	position:relative; 
 	margin-left:0px;
 	box-shadow: 0 8px 6px -7px rgba(0, 0, 0, 0.23);
@@ -1385,9 +1385,9 @@ ul#twitter_update_list li {
 
 	background: #F1F6FC;
     color: #0090FF;
-    border-radius: 9px;
-    -moz-border-radius: 9px;
-    -webkit-border-radius: 9px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     padding: 2px 10px;
     font-weight: 300;
     
