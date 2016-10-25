@@ -452,7 +452,7 @@ nav#mainmenu ul li.current-menu-parent > a,
 nav#mainmenu ul li.current_page_ancestor > a, 
 nav#mainmenu ul li.current-menu-ancestor > a { 
 	color:#ff6644;
-	margin-bottom:1px;
+	/*margin-bottom:1px;*/
 }
 
 nav#mainmenu ul li.current-menu-item > a, 

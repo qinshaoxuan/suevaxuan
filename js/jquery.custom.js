@@ -4,6 +4,9 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function($) {
 
+    //对文章中插入的图片使用prettyPhoto插件
+    $('.alignnone').parent().attr('data-rel', 'prettyPhoto');
+
 
     if (jQuery('.gobtm').length > 0) {
         jQuery('a.social').tipsy({ fade: true, gravity: 's' });

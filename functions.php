@@ -118,4 +118,13 @@ function theme_tag_cloud_args( $args ){
     $return = array_merge( $args, $newargs);
     return $return;
 }
+
+function unblock_gravatar( $avatar ) {
+    $avatar = str_replace( array( 'www.gravatar.com', '0.gravatar.com', '1.gravatar.com', '2.gravatar.com' ), 'gravatar.duoshuo.com', $avatar );
+    return $avatar;
+}
+add_filter( 'get_avatar', 'unblock_gravatar' );
+
+//关闭XML-RPC功能
+add_filter('xmlrpc_enabled','__return_false');
 ?>

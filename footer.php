@@ -59,7 +59,7 @@
 
     <?php if ( !is_singular() ) { ?>
 
-        <a class="about" href="http://www.qinshaoxuan.com/about" target="_blank"><span>&nbsp;关于我&nbsp;&nbsp;</span></a> 
+        <a class="about" href="http://www.qinshaoxuan.com/about" target="_blank"><span>关于我　</span></a> 
 
     <?php } ?>
 
