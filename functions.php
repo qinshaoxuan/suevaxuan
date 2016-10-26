@@ -127,4 +127,10 @@ add_filter( 'get_avatar', 'unblock_gravatar' );
 
 //关闭XML-RPC功能
 add_filter('xmlrpc_enabled','__return_false');
+
+//引入 Dashicons 图标的 CSS 文件
+function Bing_enqueue_dashicons(){
+    wp_enqueue_style( 'dashicons' );
+}
+add_action( 'wp_enqueue_scripts', 'Bing_enqueue_dashicons' );
 ?>
