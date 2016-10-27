@@ -16,9 +16,10 @@ Declaraction: This theme is for personal use only. please do not be used for com
 html { 
 	min-height:101%;
 }
-body.custombody { 
+body.custom-background { 
 	background-color:#f3f3f3;
-	background-size: cover;
+	/*background-size: cover;*/
+	background-size: inherit;
 }
 
 /*字体*/
@@ -1421,8 +1422,13 @@ ul#twitter_update_list li {
 	margin: 0 0 0 5px; 
 	height:24px;
 	width:24px;
-	text-indent:-9999px; 
+	/*text-indent:-9999px; */
 	filter: none !important;
+	background-color: #454545;
+	color: #FFF!important;
+	overflow: hidden;
+	border-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.67);
 }
 .socials a:hover { 
 	opacity: 0.7; 
@@ -1439,47 +1445,75 @@ ul#twitter_update_list li {
 	background-image: url(images/icons/tipsy.gif);
 }
 
-a.QQ { 
-	background:url('images/icons/social/qq.png') no-repeat;
+a.QQ:before { 
+	/*background:url('images/icons/social/qq.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f1d6"
 }
-a.GitHub { 
-	background:url('images/icons/social/github.png') no-repeat;
+a.GitHub:before { 
+	/*background:url('images/icons/social/github.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f09b"
 }
-a.flickr { 
-	background:url('images/icons/social/flickr.png') no-repeat;
+a.flickr:before { 
+	/*background:url('images/icons/social/flickr.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f16e"
 }
-a.google  { 
-	background:url('images/icons/social/google.png') no-repeat;
+a.google:before  { 
+	/*background:url('images/icons/social/google.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f1a0"
 }
-a.linkedin  { 
-	background:url('images/icons/social/linkedin.png') no-repeat;
+a.linkedin:before  { 
+	/*background:url('images/icons/social/linkedin.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f0e1"
 }
-a.admin  { 
-	background:url('images/icons/social/admin.png') no-repeat;
+a.admin:before  { 
+	/*background:url('images/icons/social/admin.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f1cb"
 }
-a.pinterest {  
-	background:url('images/icons/social/pinterest.png') no-repeat;
+a.pinterest:before {  
+	/*background:url('images/icons/social/pinterest.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f231"
 }
-a.rss { 
-	background:url('images/icons/social/rss.png') no-repeat;
+a.rss:before { 
+	/*background:url('images/icons/social/rss.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f09e"
 }
-a.skype  { 
-	background:url('images/icons/social/skype.png') no-repeat;
+a.skype:before  { 
+	/*background:url('images/icons/social/skype.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f17e"
 }
-a.tumblr  { 
-	background:url('images/icons/social/tumblr.png') no-repeat;
+a.tumblr:before  { 
+	/*background:url('images/icons/social/tumblr.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f173"
 }
-a.twitter { 
-	background:url('images/icons/social/twitter.png') no-repeat;
+a.twitter:before { 
+	/*background:url('images/icons/social/twitter.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f099"
 }
-a.vimeo  { 
-	background:url('images/icons/social/vimeo.png') no-repeat;
+a.vimeo:before  { 
+	/*background:url('images/icons/social/vimeo.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f27d"
 }
-a.youtube  { 
-	background:url('images/icons/social/youtube.png') no-repeat;
+a.youtube:before  { 
+	/*background:url('images/icons/social/youtube.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f167"
 }
-a.email  { 
-	background:url('images/icons/social/email.png') no-repeat;
+a.email:before  { 
+	/*background:url('images/icons/social/email.png') no-repeat;*/
+	font:normal normal normal 1rem/1 FontAwesome;
+	content:"\f0e0"
 }
 
 .tipsy-inner { 
@@ -2352,6 +2386,10 @@ input#ds-sync-checkbox-inline {
 #ds-thread #ds-reset .ds-toolbar-button.ds-add-image:before {
 	font:normal normal normal .875rem/1 FontAwesome;
 	content:"\f03e"
+}
+
+#ds-thread #ds-reset .ds-sort {
+	display: none!important;
 }
 
 @media screen and (min-width : 0px) and (max-width : 768px) {
