@@ -2054,6 +2054,7 @@ p img{height: auto;}
 	padding:15px 15px 12px 32px;
 	border-radius:5px;
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.22);
+	padding-left: 45px!important;
 }
 #ds-thread #ds-reset .ds-comment-body p {
 	color:#787968;
@@ -2188,16 +2189,169 @@ p img{height: auto;}
 	font-family: Consolas,Helvetica, Tahoma, Arial,  "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif!important;
 }
 
+#ds-reset .ds-icon {
+    vertical-align: baseline!important;
+    overflow: visible!important;
+    position: static!important;
+    background: none!important;
+    width: 14px!important;
+	height: 14px!important;
+}
+
 #ds-thread #ds-reset a.ds-like-thread-button .ds-icon-heart{
-	background: none!important;
-	top:-2px!important;
-	width: 14px!important;
-	height: 22px!important;
 	color: #ff7d7d;
 }
-.ds-icon-heart:before{
-	font-family: 'dashicons';
-	content: "\f487";
+#ds-thread #ds-reset .ds-icon-settings {
+	display:inline-block!important;
+	height:.875rem!important;
+	margin:0 .25rem 0!important;
+	background:0
+}
+#ds-thread #ds-reset .ds-icon-settings:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f013"
+}
+#ds-thread #ds-reset .ds-weibo,#ds-thread #ds-reset .ds-qqt,#ds-thread #ds-reset .ds-qzone,#ds-thread #ds-reset .ds-weixin,#ds-thread #ds-reset .ds-qq,#ds-thread #ds-reset .ds-renren,#ds-thread #ds-reset .ds-douban,#ds-thread #ds-reset .ds-kaixin,#ds-thread #ds-reset .ds-baidu,#ds-thread #ds-reset .ds-google {
+	display:inline-block;
+	background:0
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-service-link:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	padding-right:.125rem
+}
+#ds-thread .ds-icon-heart:before{
+	font: normal normal normal .75rem/1 FontAwesome;
+	content: "\f004";
+}
+
+#ds-thread .ds-weibo:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f18a"
+}
+#ds-thread .ds-qqt:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f1d5";
+	padding:0 .125rem
+}
+#ds-thread .ds-qzone:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f1d6"
+}
+#ds-thread .ds-weixin:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f1d7"
+}
+#ds-thread .ds-qq:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f1d6"
+}
+#ds-thread .ds-renren:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f18b"
+}
+#ds-thread .ds-douban:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f02d"
+}
+#ds-thread .ds-kaixin:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f005"
+}
+#ds-thread .ds-baidu:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f1b0"
+}
+#ds-thread .ds-google:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f1a0"
+}
+#ds-reset .ds-duoshuo {
+	background:0;
+	line-height:.875rem
+}
+#ds-thread .ds-duoshuo:before {
+	font:normal normal normal .9375rem/1 FontAwesome;
+	content:"\f086"
+}
+#ds-thread #ds-reset .ds-login-buttons {
+	font-size:.875rem;
+	font-weight:500;
+	padding-bottom:1rem;
+	text-align:center
+}
+#ds-thread #ds-reset .ds-like-tooltip .ds-service-link:before {
+	margin-right:.3125rem
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-service-link {
+	padding-left:0
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-service-link:hover {
+	color:#0090ff!important
+}
+#ds-thread #ds-reset .ds-login-buttons a,#ds-thread #ds-reset .ds-login-buttons .ds-more-services {
+	color:#9f9f9f!important
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services:hover {
+	color:#0090ff!important
+}
+input#ds-sync-checkbox {
+	min-width:initial
+}
+input#ds-sync-checkbox-inline {
+	min-width:initial
+}
+#ds-thread #ds-reset .ds-sync .ds-weibo {
+	margin-top:.5rem;
+	padding-left:.5rem
+}
+#ds-thread #ds-reset .ds-sync .ds-qqt {
+	margin-left:.25rem!important
+}
+#ds-thread #ds-reset .ds-sync a.ds-service-icon {
+	line-height:.8125rem;
+	color:#0090ff;
+}
+#ds-thread #ds-reset .ds-sync a.ds-service-icon-grey {
+	color:#aaa;
+	line-height:.8125rem
+}
+
+#ds-thread #ds-reset .ds-icon-reply:before {
+	font:normal normal normal .75rem/1 FontAwesome;
+	content:"\f112"
+}
+#ds-thread #ds-reset .ds-icon-like:before {
+	font:normal normal normal .75rem/1 FontAwesome;
+	content:"\f004"
+}
+#ds-thread #ds-reset .ds-icon-share:before {
+	font:normal normal normal .75rem/1 FontAwesome;
+	content:"\f064"
+}
+#ds-thread #ds-reset .ds-icon-report:before {
+	font:normal normal normal .75rem/1 FontAwesome;
+	content:"\f024"
+}
+#ds-thread #ds-reset .ds-icon-delete:before {
+	font:normal normal normal .75rem/1 FontAwesome;
+	content:"\f00d"
+}
+
+#ds-thread #ds-reset .ds-toolbar-button.ds-add-emote,#ds-thread #ds-reset .ds-toolbar-button.ds-add-image {
+	display:inline-block;
+	background:0;
+	margin-top:.4375rem
+}
+#ds-thread #ds-reset .ds-toolbar-button.ds-add-emote {
+	padding-left:.3125rem
+}
+#ds-thread #ds-reset .ds-toolbar-button.ds-add-emote:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f118"
+}
+#ds-thread #ds-reset .ds-toolbar-button.ds-add-image:before {
+	font:normal normal normal .875rem/1 FontAwesome;
+	content:"\f03e"
 }
 
 @media screen and (min-width : 0px) and (max-width : 768px) {
