@@ -2047,6 +2047,8 @@ p img{height: auto;}
 }
 #ds-thread #ds-reset ul.ds-children .ds-replybox.ds-inline-replybox a.ds-avatar,
 #ds-reset .ds-replybox.ds-inline-replybox a.ds-avatar {
+	width:30px!important;
+	height:30px!important;
 	left: 0;
 	top: 0;
 	padding: 0;
@@ -2059,8 +2061,6 @@ p img{height: auto;}
 #ds-reset .ds-replybox a.ds-avatar,
 #ds-reset .ds-replybox .ds-avatar img {
 	padding:0;
-	width:50px !important;
-	height:50px !important;
 	border-radius:5px!important;
 }
 #ds-reset .ds-avatar img {
@@ -2072,7 +2072,7 @@ p img{height: auto;}
 	-ms-transition:.5s all cubic-bezier(1,.015,.295,1.225);
 	transition: .5s all cubic-bezier(1,.015,.295,1.225);
 }
-#ds-reset .ds-post-self:hover .ds-avatar img {
+#ds-reset .ds-post-self:hover>.ds-avatar img {
 	-webkit-transform:rotate(360deg);
 	-moz-transform:rotate(360deg);
 	-o-transform:rotate(360deg);
@@ -2080,7 +2080,7 @@ p img{height: auto;}
 	transform:rotate(360deg);
 	border-radius:10%!important;
 }
-#ds-reset .ds-post-self:hover .ds-avatar {
+#ds-reset .ds-post-self:hover>.ds-avatar {
 	border-radius:10%!important;
 }
 #ds-thread #ds-reset .ds-comment-body {
