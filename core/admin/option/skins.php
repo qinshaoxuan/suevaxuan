@@ -81,10 +81,10 @@ $skins = array(
 	
     "suevaxuan_text_font_color" => "#616161", 
     "suevaxuan_copyright_font_color" => "#ffffff", 
-    "suevaxuan_link_color" => "#0090ff", 
-    "suevaxuan_link_color_hover" => "#0074cc", 
+    "suevaxuan_link_color" => "#29b6f6", 
+    "suevaxuan_link_color_hover" => "#0090ff", 
     "suevaxuan_selection_color" => "#81d4fa", 
-    "suevaxuan_border_color" => "#0090ff", 
+    "suevaxuan_border_color" => "#29b6f6", 
 
 	"suevaxuan_body_background" => "/images/background/patterns/pattern1.jpg",
 	"suevaxuan_body_background_repeat" => "repeat",

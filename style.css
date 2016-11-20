@@ -1385,7 +1385,7 @@ ul#twitter_update_list li {
 	border:none;
 
 	background: #F1F6FC;
-    color: #0090FF;
+    color: #29b6f6;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -1761,7 +1761,7 @@ a.email:before  {
 .m-title{position:relative;margin:10px 0;cursor:pointer;}    
 .m-title:hover:after{-webkit-transition: all .3s ease;}
 .m-title:before{position:absolute;left:93px;background:#fff;height:18px;width:18px;border-radius:6px;top:12px;content:""}
-.m-title:after{position:absolute;left:96px;background:#0090ff;height:12px;width:12px;border-radius:6px;top:15px;content:"";-webkit-transition: all .3s ease;}
+.m-title:after{position:absolute;left:96px;background:#29b6f6;height:12px;width:12px;border-radius:6px;top:15px;content:"";-webkit-transition: all .3s ease;}
 
 /* End Archive */
 
@@ -1783,7 +1783,7 @@ p img{height: auto;}
 	border:none;
 
 	background: #F1F6FC;
-    color: #0090FF;
+    color: #29b6f6;
     border-radius: 9px;
     -moz-border-radius: 9px;
     -webkit-border-radius: 9px;
@@ -1963,7 +1963,7 @@ p img{height: auto;}
 /* duoshuo */
 
 #ds-thread #ds-reset .ds-comment-body p a {
-	color: #0090ff;
+	color: #29b6f6;
     outline: none;
     border: none;
     font-weight: normal;
@@ -1973,7 +1973,7 @@ p img{height: auto;}
     -o-transition: all .3s ease;
 }
 #ds-thread #ds-reset .ds-comment-body p a:hover{
-	color: #0074cc;
+	color: #0090FF;
 }
 #ds-thread #ds-reset ul.ds-comments-tabs li.ds-tab a.ds-current {
 	border:0px;
@@ -2214,7 +2214,7 @@ p img{height: auto;}
     background-image:none!important;
 }
 #ds-thread #ds-reset .ds-post-button:hover {
-	background-color: #0090ff!important;
+	background-color: #29b6f6!important;
 }
 #ds-thread {
 	font-family: Consolas,Helvetica, Tahoma, Arial,  "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif!important;
@@ -2320,13 +2320,13 @@ p img{height: auto;}
 	padding-left:0
 }
 #ds-thread #ds-reset .ds-login-buttons .ds-service-link:hover {
-	color:#0090ff!important
+	color:#29b6f6!important
 }
 #ds-thread #ds-reset .ds-login-buttons a,#ds-thread #ds-reset .ds-login-buttons .ds-more-services {
 	color:#9f9f9f!important
 }
 #ds-thread #ds-reset .ds-login-buttons .ds-more-services:hover {
-	color:#0090ff!important
+	color:#29b6f6!important
 }
 input#ds-sync-checkbox {
 	min-width:initial
@@ -2343,7 +2343,7 @@ input#ds-sync-checkbox-inline {
 }
 #ds-thread #ds-reset .ds-sync a.ds-service-icon {
 	line-height:.8125rem;
-	color:#0090ff;
+	color:#29b6f6;
 }
 #ds-thread #ds-reset .ds-sync a.ds-service-icon-grey {
 	color:#aaa;
