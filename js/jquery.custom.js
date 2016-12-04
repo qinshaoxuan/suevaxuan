@@ -30,16 +30,20 @@ jQuery(document).ready(function() {
 jQuery(document).ready(function($) {
 
     //插入空格
-    pangu.spacingPage();
+    if ($('article').length === 1) {
+        pangu.spacingElementByTagName('article');
+    }
 
     //默认多说不分享，异步加载
-    $('#ds-sync-checkbox').wait(function(){
-        if ($('#ds-sync-checkbox').val() != "") $('#ds-sync-checkbox').click();
-    },20,1000);
-
+    if ($('#ds-sync-checkbox').length > 0) {
+        $('#ds-sync-checkbox').wait(function () {
+            if ($('#ds-sync-checkbox').val() != "") $('#ds-sync-checkbox').click();
+        }, 20, 1000);
+    }
 
     //对文章中插入的图片使用prettyPhoto插件
     $('.alignnone').parent().attr('data-rel', 'prettyPhoto');
+    $('.aligncenter').parent().attr('data-rel', 'prettyPhoto');
 
 
     if (jQuery('.gobtm').length > 0) {
